@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: IBM Plex Sans KR
+- Font Author: Copyright 2018 IBM Corp. All rights reserved.
+- Font Source: http://fonts.gstatic.com/s/ibmplexsanskr/v7/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8tK1W77HtMo.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
