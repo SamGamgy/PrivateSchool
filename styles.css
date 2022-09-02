@@ -15,6 +15,9 @@
     --dark-red: #791712;
 
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -33,7 +36,10 @@ body {
     box-sizing: border-box;
 }
 
-a {text-decoration: none;}
+a {
+    text-decoration: none;
+    color: white;
+}
 
 p {margin-top:0;}
 
@@ -87,7 +93,7 @@ h1, h2, h3, h4, h5{
     padding: 0rem 1rem 0 1rem;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     background: var(--dark-blue);
     color: var(--white);
     font-weight: 500;
@@ -113,6 +119,9 @@ h1, h2, h3, h4, h5{
 }
 .nav-bar .phone-nav:hover{
     cursor:default;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--red);
 }
 .fa-globe {
     color: white;
@@ -144,7 +153,9 @@ h1, h2, h3, h4, h5{
     display: inline-block;
     position: relative;
 }
-  
+.nav-logo .hover-underline-animation:after {
+    bottom: -3px;
+}
 .hover-underline-animation:after {
     content: '';
     position: absolute;
@@ -170,7 +181,7 @@ h1, h2, h3, h4, h5{
     position: absolute;
     width: 100%;
     height: 3px;
-    bottom: -6px;
+    bottom: 6px;
     left: 0;
     background-color: var(--red);
     transform-origin: bottom right;
@@ -197,7 +208,22 @@ font-size: 1.6rem;
 font-weight: 300;
 padding-top: 0.5rem;
 }
-
+.nav-bar .icon {
+    display: none;
+    position: relative;
+}
+li.icon{
+    font-size: 2rem;
+    padding-top: 0.5rem;
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+}
+.short{display: none;}
+.home-sub{display: none;}
 /* head banner */
 .header {
     overflow: hidden;
@@ -231,7 +257,7 @@ padding-top: 0.5rem;
     text-align: center;
     color: white;
     width: 100%;
-    height: 300px;
+    height: max-content;
     margin-right: auto;
     margin-left: auto;
     padding: 40px 10% 0px;
@@ -342,7 +368,7 @@ padding-top: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 5rem;
+    padding: 1rem 10%;
     height: 175px;
     background: rgb(255, 255, 255);
     /* background: linear-gradient(90deg, rgba(234,234,234,1) 0%, rgba(255,255,255,1) 50%, rgba(234,234,234,1) 100%); */
@@ -376,8 +402,20 @@ padding-top: 0.5rem;
 .quote-photo {
     width:100%;
     height:400px;
+}
+.photo-1{
     background: url(./assets/child-eyes.jpg);
     background-position: bottom;
+    background-size: cover;
+}
+.photo-2{
+    background: url(./assets/kids-with-letters.jpg);
+    background-position: top;
+    background-size: cover;
+}
+.photo-3{
+    background: url(./assets/stacking-blocks.jpg);
+    background-position: center;
     background-size: cover;
 }
 .photo-overlay{
@@ -397,7 +435,7 @@ padding-top: 0.5rem;
     top:1rem;
 }
 .quote{
-    font-size: 2.8rem;
+    font-size: 2rem;
     font-weight: 300;
 }
 .author {
@@ -512,10 +550,14 @@ padding-top: 0.5rem;
 }
 .input-wrap input, textarea {
     border: none;
+    border-radius: 6px;
     font-size: 1.2rem;
     margin-top: 0.5rem;
     font-weight: 300;
     resize: none;
+}
+textarea {
+    width:100%;
 }
 input:focus, textarea:focus {
     border: 0px solid rgba(0, 0, 0, 0);
@@ -540,7 +582,21 @@ footer {
     transition: all 0.2s ease;
 }
 .fa-brands:hover {
-    color:rgb(228, 228, 228);
+    color:rgba(228, 228, 228, 0.459);
+    cursor: pointer;
+}
+address a:hover{
+    color:rgba(228, 228, 228, 0.459);
+    cursor: pointer;
+}
+.footer-hours, .footer-address{
+    text-align: center;
+}
+.footer-hours div, .footer-address div{
+    margin-bottom: 0.4rem;
+}
+.footer-phone a:hover{
+    color:rgba(228, 228, 228, 0.459);
     cursor: pointer;
 }
 .footer-phone {

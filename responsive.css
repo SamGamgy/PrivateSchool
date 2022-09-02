@@ -1,0 +1,79 @@
+@media screen and (max-width: 1250px) {
+.flex-container{padding:1rem 5% ;}
+}
+@media screen and (max-width: 1000px) {
+    .home-sub{display: block;}
+    .nav-bar li.menu-items {display: none;}
+    .nav-bar .icon {
+      display: block;
+    }
+    .nav-bar.responsive li.menu-items {
+        z-index: 100;
+        display: block;
+    }
+    .nav-bar.nav-bar.responsive .menu{
+        position: absolute;
+    top: 50px;
+    right: 0;
+    background: #839fe2f0;
+    width: 201px;
+    padding: 0 1rem;
+    text-align: left;
+    z-index: 100;
+    float: none;
+    display: block;
+    text-align: left;
+    }
+    .nav-bar li:hover .sub-nav-items{
+        display: none;
+    }
+    .head-content {
+      padding: 30px 2% 0;
+    }
+    .card-cover{display: none;}
+  }
+
+  @media screen and (max-width: 825px) {
+    .long{display: none;}
+    .short{display: inline-block;}
+    
+    .pre-school-info {
+      margin-left: 1rem;
+      margin-top: 2rem;
+    }
+    .programs p {
+      font-size: 1rem;
+    }
+    .elementary .img-wrapper {
+      background-size: cover;
+    }
+    .elementary-info {
+      margin-right: 1rem;
+      margin-top: 6rem;
+      width: 60%;
+    }
+    .flex-container {
+      padding: 1rem 2rem;
+    }
+    .flex-container img {
+      width: 130px;
+    }
+    .years-badge{
+      width:115px;
+    }
+  }
+
+  @media screen and (max-width:550px) {
+    .nav-logo{display: none;}
+    .nav-bar .phone-nav { margin-left: auto;}
+    .nav-bar {gap:0}
+    .main-header {
+      font-size: 3rem;
+    }
+    .mission-statements {
+      gap: 1rem;
+    }
+    .head-content p{
+      font-size: .7rem;
+    }
+  }

@@ -7,6 +7,7 @@
         <meta name="description" content="Montessori Lab School of Chesapeake Virginia">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="./responsive.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -15,34 +16,44 @@
         <link rel="icon" type="image/png" sizes="16x16" href="./assets/fav-icon/favicon-16x16.png">
         <link rel="manifest" href="./assets/fav-icon/site.webmanifest">
         <script src="https://kit.fontawesome.com/3fde3b7a1f.js" crossorigin="anonymous"></script>
+        <script src="./main.js  "></script>
     </head>
     <body>
         <header>
             <nav>
-                <ul class="nav-bar">
+                <ul class="nav-bar" id="topNav">
                     <img class='logo' src="./assets/fav-icon/apple-touch-icon.png" alt=""> 
                     <li class="nav-logo ">
-                        <a class='active hover-underline-animation' href="">
-                            Montessori Lab School 
+                        <a class='active hover-underline-animation' href="./index.html">
+                            <span class="long"> Montessori Lab School </span>
+                            <span class="short"> MLS </span>
                         </a> 
                         <span class="sub-text">since 1977</span>
                     </li>
-                    <li class="phone-nav"> (757) 548-8762</li>
-                    <li class="hover-underline-animation">Programs
-                        <ul class="sub-nav-items">
-                            <li><a href="">Pre-School</a></li>
-                            <li><a href="">Elementary</a></li>
-                        </ul>
-                    </li>
-                    <li class="hover-underline-animation">Parents
-                        <ul class="sub-nav-items">
-                            <li><a href="">Montessori vs Traditional</a></li>
-                            <li><a href="">Admissions Process</a></li>
-                            <li><a href="">Calender</a></li>
-                            <li><a href="">Recommended Reading</a></li>
-                        </ul>
+                    <li class="phone-nav"><a href="tel:7575488762">(757) 548-8762</a> </li>
+                    <div class="menu">
+                        <li class="home-sub menu-items hover-underline-animation"><a href="./index.html">Home</a></li>
+                        <li class="menu-items hover-underline-animation"><a href="./programs.html">Programs</a>
+                            <ul class="sub-nav-items">
+                                <li><a href="./programs.html#pre-school">Pre-School</a></li>
+                                <li><a href="./programs.html#elementary">Elementary</a></li>
+                            </ul>
                         </li>
-                    <li class="hover-underline-animation"><a href="">Contact</a></li>
+                        <li class="menu-items hover-underline-animation"><a href="./parents.html">Parents</a>
+                            <ul class="sub-nav-items">
+                                <li><a href="./parents.html#admission">Admissions Process</a></li>
+                                <li><a href="./parents.html#mont-vs-trad">Montessori vs Traditional</a></li>
+                                <li><a href="./parents.html#calender">Calender</a></li>
+                                <li><a href="./parents.html#reading">Recommended Reading</a></li>
+                            </ul>
+                            </li>
+                        <li class="menu-items hover-underline-animation"><a href="./contact.html">Contact</a></li>
+                    </div>
+                    <li class="icon"> 
+                        <a href="javascript:void(0);" class="icon" onclick="navBarMobile()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
                 </ul>
             </nav>
             
@@ -175,36 +186,30 @@
                 </form>
             </div>
         </section>
-        <!-- <section class="quote-section">
-            <div class="quote-photo">
-                <div class="photo-overlay">
-                </div>
-            </div>
-            <div class="quote-container">
-                <div class="quote">
-                    "The goal of early childhood education should be to activate the child's own natural desire to learn."
-                </div>
-                <div class="author">-Dr. Maria Montessori</div>
-            </div>
-        </section> -->
+        
         <footer>
-            <div>
+            <div class="footer-address">
                 <h5>Address</h5>
                 <address>
-                    <div>1101 Madison Plaza</div>
-                    <div>Chesapeake, VA 23320</div>
+                    <a target="_blank" href="https://www.google.com/maps/place/Montessori+Lab+School.com/@36.7605799,-76.2538223,17z/data=!3m2!4b1!5s0x89babca310d77bcb:0xc9bf75806c7ec709!4m5!3m4!1s0x89babca310645dcd:0x31bca33e4d08de74!8m2!3d36.7605756!4d-76.2516336">
+                        <div>1101 Madison Plaza</div>
+                        <div>Chesapeake, VA 23320</div>
+                    </a>
                 </address>
             </div>
             <div class="footer-phone">
-                <div>757-548-8762</div>
+                <div><a href="tel:7575488762">757-548-8762</a> </div>
             </div>
             <div class="social-icon">
-                <i class="fa-brands fa-square-facebook"><a href=""></a></i>
+                <i class="fa-brands fa-square-facebook">
+                    <a target="_blank" href="https://www.facebook.com/montessorilabschool"></a>
+                </i>
             </div>
             <div class="footer-hours">
                 <h5>Hours of Operation</h5>
                 <div>Monday-Friday</div>
-                <div>September-June : 8:30 a.m. - 4:00 p.m.</div>
+                <div>8:30 a.m. - 4:00 p.m.</div>
+                <div>September-June</div>
             </div>
         </footer>
         <script src="" async defer></script>
