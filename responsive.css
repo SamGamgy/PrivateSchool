@@ -1,6 +1,13 @@
 @media screen and (max-width: 1250px) {
 .flex-container{padding:1rem 5% ;}
 }
+.cards {
+  position: absolute;
+  top: 36rem;
+}
+.card-cover .sub-header {
+  margin-top: 20px;
+}
 @media screen and (max-width: 1000px) {
     .home-sub{display: block;}
     .nav-bar li.menu-items {display: none;}
@@ -13,24 +20,45 @@
     }
     .nav-bar.nav-bar.responsive .menu{
         position: absolute;
-    top: 50px;
-    right: 0;
-    background: #839fe2f0;
-    width: 201px;
-    padding: 0 1rem;
-    text-align: left;
-    z-index: 100;
-    float: none;
-    display: block;
-    text-align: left;
-    }
+        top: 50px;
+        right: 0;
+        background: #839fe2f0;
+        width: 201px;
+        padding: 0 1rem;
+        text-align: left;
+        z-index: 100;
+        float: none;
+        display: block;
+        text-align: left;
+        }
     .nav-bar li:hover .sub-nav-items{
         display: none;
     }
     .head-content {
       padding: 30px 2% 0;
     }
+    .elementary .img-wrapper {
+      background-size: contain;
+      background-image: linear-gradient(90deg, rgba(234,234,234,0) 0%, rgba(255,255,255,1) 55%, rgba(255,255,255,1) 100%), url(./assets/kids.jpg);
+    }
+    .programs p {
+      font-size: 1.2rem;
+    }
+    .cards {
+      position: relative;
+      top: 0;
+      height: 715px;
+    }
     .card-cover{display: none;}
+    .feature-card{
+      transition: all .2s ease-in;
+    }
+    .feature-card:hover{
+      transform: translateY(-10px);
+    }
+    .contact {
+      width: 50%;
+    }
   }
 
   @media screen and (max-width: 825px) {
@@ -41,25 +69,32 @@
       margin-left: 1rem;
       margin-top: 2rem;
     }
-    .programs p {
-      font-size: 1rem;
+    
+    .programs h4{
+      font-size: 2rem;
+    }
+    .programs h5{
+      font-size: 1.5rem;
     }
     .elementary .img-wrapper {
       background-size: cover;
     }
     .elementary-info {
       margin-right: 1rem;
-      margin-top: 6rem;
-      width: 60%;
+      margin-top: 2rem;
     }
     .flex-container {
       padding: 1rem 2rem;
     }
     .flex-container img {
-      width: 130px;
+      width: 200px;
     }
     .years-badge{
       width:115px;
+    }
+    footer {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
     }
   }
 
@@ -70,10 +105,58 @@
     .main-header {
       font-size: 3rem;
     }
+    .pre-school{
+      height: max-content;
+    }
+    .pre-school-info {
+      position: relative;
+      width: 99%;
+      margin: 2rem 0.5rem -5rem;
+      margin-right: 1rem;
+    }
+    .pre-school .img-wrapper{
+      width: 93%;
+      background-size: contain;
+      margin: 0 1rem;
+      background-image: url(./assets/eating-snack.jpg);
+    }
+    .elementary .img-wrapper{
+      width: 93%;
+      background-size: contain;
+      margin: 0 1rem;
+      background-image: url(./assets/kids.jpg);
+    }
+    .elementary{
+      height: max-content;
+    }
+    .elementary-info{
+      position: relative;
+      width: 95%;
+      margin: -4rem 0.5rem;
+      margin-right: 1rem;
+    }
     .mission-statements {
       gap: 1rem;
     }
-    .head-content p{
-      font-size: .7rem;
+    .contact {
+      width:100%;
+      margin-bottom: 2rem;
+    }
+    .flex-container img {
+      width: 150px;
     }
   }
+
+  @media screen and (max-width:480px) {
+    .head-overlay{top:15%;}
+    .cards {
+      height: 1515px;
+    }
+    .mission-statements {
+      display: block;
+    }
+    .flex-container img {
+      width: 115px;
+    }
+  }
+  
