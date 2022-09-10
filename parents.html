@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="./responsive.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Sacramento&display=swap" rel="stylesheet">
         <link rel="apple-touch-icon" sizes="180x180" href="./assets/fav-icon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="./assets/fav-icon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="./assets/fav-icon/favicon-16x16.png">
@@ -20,30 +20,39 @@
     <body>
         <header>
             <nav>
-                <ul class="nav-bar">
+                <ul class="nav-bar" id="topNav">
                     <img class='logo' src="./assets/fav-icon/apple-touch-icon.png" alt=""> 
                     <li class="nav-logo ">
                         <a class='hover-underline-animation' href="./index.html">
-                            Montessori Lab School 
+                            <span class="long"> Montessori Lab School </span>
+                            <span class="short"> MLS </span>
                         </a> 
                         <span class="sub-text">since 1977</span>
                     </li>
                     <li class="phone-nav"><a href="tel:7575488762">(757) 548-8762</a> </li>
-                    <li class="hover-underline-animation"><a href="./programs.html">Programs</a>
-                        <ul class="sub-nav-items">
-                            <li><a href="./programs.html#pre-school">Pre-School</a></li>
-                            <li><a href="./programs.html#elementary">Elementary</a></li>
-                        </ul>
-                    </li>
-                    <li class="active hover-underline-animation"><a href="./parents.html">Parents</a>
-                        <ul class="sub-nav-items">
-                            <li><a href="./parents.html#admission">Admissions Process</a></li>
-                            <li><a href="./parents.html#mont-vs-trad">Montessori vs Traditional</a></li>
-                            <li><a href="./parents.html#calender">Calender</a></li>
-                            <li><a href="./parents.html#reading">Recommended Reading</a></li>
-                        </ul>
+                    <div class="menu">
+                        <li class="home-sub menu-items hover-underline-animation"><a href="./index.html">Home</a></li>
+                        <li class="menu-items hover-underline-animation"><a href="./programs.html">Curriculum</a>
+                            <ul class="sub-nav-items">
+                                <li><a href="./programs.html#pre-school">Pre-School Programs</a></li>
+                                <li><a href="./programs.html#elementary">Elementary Program</a></li>
+                                <li><a href="./programs.html#admission">Admissions Process</a></li>
+                            </ul>
                         </li>
-                    <li class="hover-underline-animation"><a href="./contact.html">Contact</a></li>
+                        <li class=" active menu-items hover-underline-animation"><a href="./parents.html">Parents</a>
+                            <ul class="sub-nav-items">
+                                <li><a href="./parents.html#what-is-montessori">What is Montessori?</a></li>
+                                <li><a href="./parents.html#calender">School Calender</a></li>
+                                <li><a href="./parents.html#reading">Recommended Reading</a></li>
+                            </ul>
+                            </li>
+                        <li class="menu-items hover-underline-animation"><a href="./contact.html">Contact</a></li>
+                    </div>
+                    <li class="icon"> 
+                        <a href="javascript:void(0);" class="icon" onclick="navBarMobile()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </header>    
@@ -55,16 +64,180 @@
             </div>
             <div class="quote-container">
                 <div class="quote">
-                    “To stimulate life, leaving it free, however, to unfold itself--that is the first duty of the educator.”
+                    “The greatest gifts we can give our children are the roots of responsibility and the wings of independence”
                 </div>
                 <div class="author">-Dr. Maria Montessori</div>
             </div>
         </section>
-        <section id="pre-school">
+        <section id="what-is-montessori">
+            <h4 class="sub-header">What is Montessori?</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GcgN0lEh5IA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+            <h4 class="sub-header"> Montessori vs Traditional Education?</h4>
+            <div class="container compare-grid">
+                <div class="comparison-points">
+                    <div class="traditional">
+                        <h5>Traditional</h5>
+                        <div>Teacher's role is dominant, and active. Child is a passive participant.</div>
+                    </div>
+                    <div class='montessori'>
+                        <h5>Montessori</h5>
+                        <div>Teacher's role is unobtrusive. Child actively participates in learning.</div>
+                    </div>
+                </div>
+                <div class="comparison-points">
+                    <div class="traditional">
+                        <h5>Traditional</h5>
+                        <div>Teacher is primary enforcer of external discipline</div>
+                    </div>
+                    <div class='montessori'>
+                        <h5>Montessori</h5>
+                        <div>Environment and method encourages internal self-discipline</div>
+                    </div>
+                </div>
+                <div class="comparison-points">
+                    <div class="traditional">
+                        <h5>Traditional</h5>
+                        <div>Individual & group instruction conforms to the adult's learning style.</div>
+                    </div>
+                    <div class='montessori'>
+                        <h5>Montessori</h5>
+                        <div>Individual and group instruction adapts to each student's learning style.</div>
+                    </div>
+                </div>
+                <div class="comparison-points">
+                    <div class="traditional">
+                        <h5>Traditional</h5>
+                        <div>Children are grouped other children of their same age</div>
+                    </div>
+                    <div class='montessori'>
+                        <h5>Montessori</h5>
+                        <div>Children are grouped with a mix of ages, and encourages to teach, collaborate, and help each other.</div>
+                    </div>
+                </div>
+                <div class="comparison-points">
+                    <div class="traditional">
+                        <h5>Traditional</h5>
+                        <div>Curriculum is structured with little regard for child's interests</div>
+                    </div>
+                    <div class='montessori'>
+                        <h5>Montessori</h5>
+                        <div>Child chooses own work from interest and abilities</div>
+                    </div>
+                </div>
+                <div class="comparison-points">
+                    <div class="traditional">
+                        <h5>Traditional</h5>
+                        <div>Errors corrected by teacher</div>
+                    </div>
+                    <div class='montessori'>
+                        <h5>Montessori</h5>
+                        <div>Child spots own errors through feedback from material.</div>
+                    </div>
+                </div>
+                <div class="comparison-points">
+                    <div class="traditional">
+                        <h5>Traditional</h5>
+                        <div>Learning is reinforced externally by rewards and punishment.</div>
+                    </div>
+                    <div class='montessori'>
+                        <h5>Montessori</h5>
+                        <div>Learning is reinforced internally through child's own repetition of activity & internal feelings of success</div>
+                    </div>
+                </div>
+                <div class="comparison-points">
+                    <div class="traditional">
+                        <h5>Traditional</h5>
+                        <div>Child assigned seat; encouraged to sit still & listen</div>
+                    </div>
+                    <div class='montessori'>
+                        <h5>Montessori</h5>
+                        <div>Child can work where they are comfortable, move and talk at will (without disturbing others).</div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="elementary">
-
+        
+        <section id="calender">
+            <h4 class="sub-header"> 
+                <span id="year">
+                    <script>document.getElementById('year').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+                </span>
+                School Calender
+            </h4> 
+            <div class="container">
+                <iframe src="./assets/calender-2022.pdf" scrolling='auto'  frameborder="1" width="100%" height="500px"></iframe>
+                <!-- <img class='calender-img' src="./assets/22-23-calender.jpeg" alt=""> -->
+            </div>
+        </section>
+        <section id="reading">
+            <h4 class="sub-header">Recommended Reading</h4>
+            <h5 >Click book cover for more information</h5>
+            <div class="books-container">
+                <div class="reading-container">
+                    <a target='_blank' class='book' href="https://www.google.com/books/edition/_/oFXJngEACAAJ?hl=en&sa=X&ved=2ahUKEwjtp9KH7ID6AhWpE1kFHcqwD3MQ7_IDegQIFhAC">
+                        <img src="./assets/book-covers/the-discovery-of-the-child.jpg" alt="the discovery of the child book cover">
+                    </a>
+                    <div>The Discovery of the Child</div>
+                    <div>Maria Montessori</div>
+                </div>
+                <div class="reading-container">
+                    <a target='_blank' class='book' href="https://www.google.com/books/edition/The_Secret_of_Childhood/vxUiAQAAIAAJ?kptab=overview">
+                        <img src="./assets/book-covers/the-secret-of-childhood.jpg" alt="secret of childhood book cover">
+                    </a>
+                    <div>The Secret of Childhood</div>
+                    <div>Maria Montessori</div>
+                </div>
+                <div class="reading-container">
+                    <a target='_blank' class='book' href="https://www.google.com/books/edition/_/XucAsKYBjMgC?hl=en&sa=X&ved=2ahUKEwiHgJPG64D6AhVYFlkFHVh7BdwQre8FegQIAhAH">
+                        <img src="./assets/book-covers/the-montessori-method.jpg" alt="montessori method book cover">
+                    </a>
+                    <div>Montessori Method</div>
+                    <div>Maria Montessori</div>
+                </div>
+                <div class="reading-container">
+                    <a target='_blank' class='book' href="https://www.google.com/books/edition/_/Io6Tu6_6srUC?hl=en&sa=X&ved=2ahUKEwjhuLSW7ID6AhU3EVkFHRejBw0Qre8FegQIAxAH">
+                        <img src="./assets/book-covers/dr-montessoris-own-handbook.jpg" alt="dr. montessori own handbook book cover">
+                    </a>
+                    <div>Dr. Montessori's Own Handbook</div>
+                    <div>Maria Montessori</div>
+                </div>
+                <div class="reading-container">
+                    <a target='_blank' class='book' href="https://www.google.com/books/edition/Montessori_A_Modern_Approach/lOpb6ykLIBYC?hl=en&gbpv=0">
+                        <img src="./assets/book-covers/montessori-a-modern-approach.jpg" alt="montessori: a modern approach book cover">
+                    </a>
+                    <div>Montessori: A Modern Approach</div>
+                    <div>Paula Polk Lillard</div>
+                </div>
+                <div class="reading-container">
+                    <a target='_blank' class='book' href="https://www.google.com/books/edition/Montessori_Today/-PSUbwoZDkIC?hl=en&sa=X&ved=2ahUKEwiV3Lbg64D6AhXkUjUKHQRnC3MQiqUDegQICRAH">
+                        <img src="./assets/book-covers/montessori-today.jpg" alt="montessori today book cover">
+                    </a>
+                    <div>Montessori Today</div>
+                    <div>Paula Polk Lillard</div>
+                </div>
+                <div class="reading-container">
+                    <a target='_blank' class='book' href="https://www.google.com/books/edition/Montessori_in_the_Classroom/if9vDwAAQBAJ?hl=en&sa=X&ved=2ahUKEwiBqo7n64D6AhVZGFkFHcv_DwgQiqUDegQIBxAH">
+                        <img src="./assets/book-covers/montessori-in-the-classroom.jpg" alt="montessori in the classroom book cover">
+                    </a>
+                    <div>Montessori in the Classroom</div>
+                    <div>Paula Polk Lillard</div>
+                </div>
+                <div class="reading-container">
+                    <a target='_blank' class='book' href="https://www.google.com/books/edition/Montessori_from_the_Start/f_9vDwAAQBAJ?hl=en&sa=X&ved=2ahUKEwjD6NbX64D6AhVlFFkFHfxaD_0QiqUDegQIBRAC">
+                        <img src="./assets/book-covers/montessori-from-the-start.jpg" alt="montessori from the start book cover">
+                    </a>
+                    <div>Montessori from the Start</div>
+                    <div>Paula Polk Lillard & Lynn Lillard Jessen</div>
+                </div>
+                <div class="reading-container">
+                    <a target='_blank' class='book' href="https://www.google.com/books/edition/The_Montessori_Toddler/KOhrDwAAQBAJ?hl=en&gbpv=0">
+                        <img src="./assets/book-covers/the-montessori-toddler.jpg" alt="the montessori toddler book cover">
+                    </a>
+                    <div>The Montessori Toddler</div>
+                    <div>Simone Davies</div>
+                </div>
+            </div>
         </section>
         <footer>
             <div class="footer-address">
@@ -77,7 +250,7 @@
                 </address>
             </div>
             <div class="footer-phone">
-                <div><a href="tel:7575488762">757-548-8762</a> </div>
+                <div>Call Us: <br/><br/> <a href="tel:7575488762">757-548-8762</a> </div>
             </div>
             <div class="social-icon">
                 <a target="_blank" href="https://www.facebook.com/montessorilabschool">
@@ -90,6 +263,6 @@
                 <div>September-June : 8:30 a.m. - 4:00 p.m.</div>
             </div>
         </footer>
-        <script src="" async defer></script>
+        <script src="./main.js" async defer></script>
     </body>
 </html>

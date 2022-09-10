@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="./responsive.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Sacramento&display=swap" rel="stylesheet">
         <link rel="apple-touch-icon" sizes="180x180" href="./assets/fav-icon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="./assets/fav-icon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="./assets/fav-icon/favicon-16x16.png">
@@ -20,51 +20,195 @@
     <body>
         <header>
             <nav>
-                <ul class="nav-bar">
+                <ul class="nav-bar" id="topNav">
                     <img class='logo' src="./assets/fav-icon/apple-touch-icon.png" alt=""> 
                     <li class="nav-logo ">
                         <a class='hover-underline-animation' href="./index.html">
-                            Montessori Lab School 
+                            <span class="long"> Montessori Lab School </span>
+                            <span class="short"> MLS </span>
                         </a> 
                         <span class="sub-text">since 1977</span>
                     </li>
                     <li class="phone-nav"><a href="tel:7575488762">(757) 548-8762</a> </li>
-                    <li class="active hover-underline-animation"><a href="./programs.html">Programs</a>
-                        <ul class="sub-nav-items">
-                            <li><a href="./programs.html#pre-school">Pre-School</a></li>
-                            <li><a href="./programs.html#elementary">Elementary</a></li>
-                        </ul>
-                    </li>
-                    <li class="hover-underline-animation"><a href="./parents.html">Parents</a>
-                        <ul class="sub-nav-items">
-                            <li><a href="./parents.html#admission">Admissions Process</a></li>
-                            <li><a href="./parents.html#mont-vs-trad">Montessori vs Traditional</a></li>
-                            <li><a href="./parents.html#calender">Calender</a></li>
-                            <li><a href="./parents.html#reading">Recommended Reading</a></li>
-                        </ul>
+                    <div class="menu">
+                        <li class="home-sub menu-items hover-underline-animation"><a href="./index.html">Home</a></li>
+                        <li class="active menu-items hover-underline-animation"><a href="./programs.html">Curriculum</a>
+                            <ul class="sub-nav-items">
+                                <li><a href="./programs.html#pre-school">Pre-School Programs</a></li>
+                                <li><a href="./programs.html#elementary">Elementary Program</a></li>
+                                <li><a href="./programs.html#admission">Admissions Process</a></li>
+                            </ul>
                         </li>
-                    <li class="hover-underline-animation"><a href="./contact.html">Contact</a></li>
+                        <li class="menu-items hover-underline-animation"><a href="./parents.html">Parents</a>
+                            <ul class="sub-nav-items">
+                                <li><a href="./parents.html#what-is-montessori">What is Montessori?</a></li>
+                                <li><a href="./parents.html#calender">School Calender</a></li>
+                                <li><a href="./parents.html#reading">Recommended Reading</a></li>
+                            </ul>
+                            </li>
+                        <li class="menu-items hover-underline-animation"><a href="./contact.html">Contact</a></li>
+                    </div>
+                    <li class="icon"> 
+                        <a href="javascript:void(0);" class="icon" onclick="navBarMobile()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
                 </ul>
             </nav>
-        </header>    
-        
+        </header> 
+        <section class="photo-gallery">
+            <div class="container photos">
+                <div class="item1"><img src="./assets/girl-cooking.jpg" alt=""></div>
+                <div class="item2"><img src="./assets/girl-counting-two.jpg" alt=""></div>
+                <div class="item3"><img src="./assets/girl-counting.jpg" alt=""></div>
+                <div class="item4"><img src="./assets/kids-with-letters.jpg" alt=""></div>
+                <div class="item5"><img src="./assets/writing.jpg" alt=""></div>
+                <div class="item6"><img src="./assets/stacking-blocks.jpg" alt=""></div>
+            </div>
+        </section>
+        <section id="pre-school">
+            <h2 class="sub-header">Pre-School Programs</h2>
+            <div class="container">
+                <div class="program-descript">Montessori Lab School, offers advanced early childhood education that focuses on developing and strengthening your three to five year old’s character and brainpower.</div>
+
+               <div class="program left">
+                    <h4>Limited Week</h4>
+                    <div class="flex-container">
+                        <div>Age 3</div>
+                        <div>Tues/Wed/Thurs</div>
+                        <div>8:30 am - 12:00 pm</div>
+                    </div>
+                    <div class="container program-body">
+                        <div class="intro">Designed for very young children; our Limited Week Program helps your child:</div>
+                        <div class="bullet">Develop a strong interest and love for learning</div>
+                        <div class="bullet">Adapt to their environment</div>
+                    </div>
+                    <div class="focus-areas">
+                        <h5>Focus Areas:</h5>
+                        <div>Spanish, Everyday Living Skills, Sensorial Training, International Culture, Art and Music</div>
+                    </div>
+               </div>
+
+                <div class="program left">
+                    <h4>Half Day</h4>
+                    <div class="flex-container">
+                        <div>Age 3-5</div>
+                        <div>5 Days a Week</div>
+                        <div>8:30 am - 12:00 pm</div>
+                    </div>
+                    <div class="container program-body">
+                        <div class="intro">Designed for younger children; our Half Day Program helps your child:</div>
+                        <div class="bullet">Develop a sense of logic and concentration using exercises in perception and observation</div>
+                        <div class="bullet">Strengthen your child's independence and self-reliance</div>
+                    </div>
+                    <div class="focus-areas">
+                    <h5>Focus Areas:</h5>
+                    <div>Spanish, Practical Life, Sensorial Training, Language Arts, Science, Mathematics, Geography, International Culture, Science, Art and Music. </div>
+                    </div>
+                </div>
+
+                <div class="program left">
+                    <h4>Full Day</h4>
+                    <div class="flex-container">
+                        <div>Age 5-6</div>
+                        <div>5 Days a Week</div>
+                        <div>8:30 am - 3:30 pm</div>
+                    </div>
+                    <div class="container program-body">
+                        <div class="intro">Designed for emerging elementary age children; our Full Day Program offers opportunity for:</div>
+                        <div class="bullet">Long periods of quiet concentration needed for the advanced afternoon group lessons</div>
+                        <div class="bullet">Further development of time management and leadership skills</div>
+                    </div>
+                    <div class="focus-areas">
+                    <h5>Focus Areas:</h5>
+                    <div>Spanish, Language Arts, Science, Mathematics, Geography, International Culture, Art, and Music</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="elementary">
+            <h2 class="sub-header">Elementary Program</h2>
+            <div class="container">
+                <div class="program-descript">Montessori Lab School in Chesapeake, Virginia, provides first-rate elementary education with a strong focus on developing multiple intelligences. This is a full-day program, in a well-organized and fully-equipped environment that is ideal for sharpening your child’s problem solving and critical thinking skills. </div>
+                <div class="program left">
+                    <h4>Elementary Program</h4>
+                    <div class="flex-container">
+                        <div>Age 6-10</div>
+                        <div>5 Days a Week</div>
+                        <div>8:30 am - 3:30 pm</div>
+                    </div>
+                    <div class="container program-body">
+                        <div class="intro">Designed for older children; our Elementary Program offers your child:</div>
+                        <div class="bullet">A well organized, fully-equipped environment that honors your child's multiple intelligences.</div>
+                        <div class="bullet">The opportunity to develop independent problem solving and critical thinking skills.</div>
+                        <div class="bullet">A wide array of challenging academic work in a safe and age appropriate environment.</div>
+                        <div class="bullet">The challenge of becoming a role model and teacher to the younger children.</div>
+                        <div class="bullet">An understanding of world culture and the celebration of cultural differences</div>
+                    </div>
+                    <div class="focus-areas">
+                        <h5>Focus Areas:</h5>
+                        <div>Spanish, Language Arts, The Sciences, History, Mathematics, Algebra, Geometry, Citizenship, Physical and Cultural Geography, International Culture, Performing Arts - Choreography, Vocal and Instrumental music.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="white-space"></section>
         <section class="quote-section">
-            <div class="quote-photo photo-1">
+            <div class="quote-photo photo-3">
                 <div class="photo-overlay">
                 </div>
             </div>
             <div class="quote-container">
                 <div class="quote">
-                    "The goal of early childhood education should be to activate the child's own natural desire to learn."
+                    “It is true that we cannot make a genius. We can only give the child a chance to fulfil his potential possibilities.”
                 </div>
                 <div class="author">-Dr. Maria Montessori</div>
             </div>
-        </section>
-        <section id="pre-school">
-
-        </section>
-        <section id="elementary">
-
+        </section>  
+        <section class="white-space"></section>
+        <section id="admission">
+            <h3 class="sub-header">Admission Process</h3>
+            <div class="admission-process">
+                <div class="step-bubble step-1">
+                    <h3>Step 1</h3>
+                    <div class="bubble-icon-wrapper">
+                        <i class="fa-solid fa-phone"></i>
+                        <i class="fa-solid fa-file-lines"></i>
+                    </div>
+                    <div class="description">Call or Fill Out Contact Form</div>
+                </div>
+                <div class="step-bubble step-2">
+                    <h3>Step 2</h3>
+                    <div class="bubble-icon-wrapper">
+                        <i class="fa-regular fa-calendar-days"></i>
+                    </div>
+                    <div class="description">Schedule Parent Interview</div>
+                </div>
+                <div class="step-bubble step-3">
+                    <h3>Step 3</h3>
+                    <div class="bubble-icon-wrapper">
+                        <i class="fa-solid fa-clipboard-question"></i>
+                    </div>
+                    <div class="description"> Application and Questionnaire *</div>
+                </div>
+                <!-- <div class="step-bubble step-4">
+                    <h3>Step 4</h3>
+                    <div class="bubble-icon-wrapper">
+                        <i class="fa-solid fa-phone"></i>
+                        <i class="fa-solid fa-file-lines"></i>
+                    </div>
+                    <div class="description">Schedule Student Interview</div>
+                </div> -->
+                <div class="step-bubble step-4">
+                    <h3>Step 4</h3>
+                    <div class="bubble-icon-wrapper">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="description">Await Acceptance or Denial</div>
+                </div>
+            </div>
+            <button class="btn admission-btn">Start the Process</button>
+            <div class="disclosure">*Requires Non-refundable Application Fee</div>
         </section>
         <footer>
             <div class="footer-address">
@@ -77,7 +221,7 @@
                 </address>
             </div>
             <div class="footer-phone">
-                <div><a href="tel:7575488762">757-548-8762</a> </div>
+                <div>Call Us: <br/><br/> <a href="tel:7575488762">757-548-8762</a> </div>
             </div>
             <div class="social-icon">
                 <a target="_blank" href="https://www.facebook.com/montessorilabschool">

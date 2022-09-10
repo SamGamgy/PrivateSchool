@@ -1,10 +1,41 @@
+@media screen and (min-width:1251px){
+  .main-header {font-size: 5.2rem;}
+  .nav-bar{font-size: 1.5rem; height: 7%;}
+  .sub-nav-items li a {font-size: 1rem;}
+  .nav-bar li a {padding-bottom: 2rem;}
+  .sub-nav-items {top:3.5rem;}
+  .hover-underline-animation:after{bottom:3px}
+  .nav-logo .hover-underline-animation:after {
+    bottom: 26px;
+  }
+  .head-content p {
+    font-size: 1.7rem;
+    line-height: 38px;
+}
+  .elementary .img-wrapper {
+    width: 50%;
+    background-size: cover;
+    background-image: linear-gradient(90deg, rgba(234,234,234,0) 0%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 100%), url(./assets/kids.jpg);
+}
+  .quote-section {
+    height:500px;
+  }
+  .quote-photo{height: inherit;}
+  .quote-container{
+    padding:10%;
+    top:0;
+    bottom: 0;
+  }
+  .quote{font-size: 3rem;}
+  textarea {width: 80%;}
+}
 @media screen and (max-width: 1250px) {
 .flex-container{padding:1rem 5% ;}
 }
-.cards {
+/* .cards {
   position: absolute;
   top: 36rem;
-}
+} */
 .card-cover .sub-header {
   margin-top: 20px;
 }
@@ -57,7 +88,7 @@
       transform: translateY(-10px);
     }
     .contact {
-      width: 50%;
+      width: 60%;
     }
   }
 

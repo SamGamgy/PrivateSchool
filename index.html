@@ -10,15 +10,16 @@
         <link rel="stylesheet" href="./responsive.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Sacramento&display=swap" rel="stylesheet">
         <link rel="apple-touch-icon" sizes="180x180" href="./assets/fav-icon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="./assets/fav-icon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="./assets/fav-icon/favicon-16x16.png">
         <link rel="manifest" href="./assets/fav-icon/site.webmanifest">
         <script src="https://kit.fontawesome.com/3fde3b7a1f.js" crossorigin="anonymous"></script>
-        <script src="./main.js  "></script>
+        
     </head>
     <body>
+        <a class="floating-btn" target='_blank' href="./contact.html"><div>Ready to Enroll?</div></a>
         <header>
             <nav>
                 <ul class="nav-bar" id="topNav">
@@ -28,22 +29,21 @@
                             <span class="long"> Montessori Lab School </span>
                             <span class="short"> MLS </span>
                         </a> 
-                        <span class="sub-text">since 1977</span>
                     </li>
                     <li class="phone-nav"><a href="tel:7575488762">(757) 548-8762</a> </li>
                     <div class="menu">
                         <li class="home-sub menu-items hover-underline-animation"><a href="./index.html">Home</a></li>
-                        <li class="menu-items hover-underline-animation"><a href="./programs.html">Programs</a>
+                        <li class="menu-items hover-underline-animation"><a href="./programs.html">Curriculum</a>
                             <ul class="sub-nav-items">
-                                <li><a href="./programs.html#pre-school">Pre-School</a></li>
-                                <li><a href="./programs.html#elementary">Elementary</a></li>
+                                <li><a href="./programs.html#pre-school">Pre-School Programs</a></li>
+                                <li><a href="./programs.html#elementary">Elementary Program</a></li>
+                                <li><a href="./programs.html#admission">Admissions Process</a></li>
                             </ul>
                         </li>
                         <li class="menu-items hover-underline-animation"><a href="./parents.html">Parents</a>
                             <ul class="sub-nav-items">
-                                <li><a href="./parents.html#admission">Admissions Process</a></li>
-                                <li><a href="./parents.html#mont-vs-trad">Montessori vs Traditional</a></li>
-                                <li><a href="./parents.html#calender">Calender</a></li>
+                                <li><a href="./parents.html#what-is-montessori">What is Montessori?</a></li>
+                                <li><a href="./parents.html#calender">School Calender</a></li>
                                 <li><a href="./parents.html#reading">Recommended Reading</a></li>
                             </ul>
                             </li>
@@ -56,12 +56,12 @@
                     </li>
                 </ul>
             </nav>
-            
+            </header>
             <section class="head-banner">
                 <div class="head-overlay">
                     <div class="head-content">
                         <h2 class="main-header">Montessori Lab School</h2>
-                        <h4 class="sub-header">Our Mission</h4>
+                        <h4>Serving Hampton Roads since 1977</h4>
                         <div class="mission-statements">
                             <p>
                                 We offer children a <br/>
@@ -82,10 +82,9 @@
                     </div>
                 </div>
             </section>
-        </header>
         <section class="cards">
             <div class="container card-holder">
-                <div class="feature-card feature-1">
+                <div class="feature-card feature-1" data-open="1">
                     <div class="icon-wrapper">
                         <i class="fa-solid fa-earth-asia"></i>
                     </div>
@@ -94,7 +93,7 @@
                     <p>Cultural Studies</p>
                     <p>Multi-Cultural Events</p>
                 </div>
-                <div class="feature-card feature-2">
+                <div class="feature-card feature-2" data-open="2">
                     <div class="icon-wrapper">
                         <i class="fa-solid fa-masks-theater"></i>
                     </div>
@@ -103,7 +102,7 @@
                     <p>Choregraphy</p>
                     <p>Plays</p>
                 </div>
-                <div class="feature-card feature-3">
+                <div class="feature-card feature-3" data-open="3">
                     <div class="icon-wrapper">
                         <i class="fa-solid fa-people-group"></i>
                     </div>
@@ -113,7 +112,7 @@
                     <p>Communication </p>
                     <p>Citizenship</p>
                 </div>
-                <div class="feature-card feature-4">
+                <div class="feature-card feature-4" data-open="4">
                     <div class="icon-wrapper">
                         <i class="fa-solid fa-graduation-cap"></i>
                     </div>
@@ -126,66 +125,130 @@
                     <h4 class="sub-header"> Our Areas of Focus</h4>
                 </div>
         </section>
-        
+        <div class="pop-up-modals-container"></div>
+        <section class="white-space"></section>
+        <section>
+            <div class="container dots">
+                
+                <div class="dots-header">Adding to the future success of your child</div>
+                <div class="dots-flex">
+                    <div class="dots-letter">
+                        <h1>D.</h1>
+                        <span>Decision Making</span>
+                    </div>
+                    <div class="dots-letter">
+                        <h1>O.</h1>
+                        <span>Organization</span>
+                    </div>
+                    <div class="dots-letter">
+                        <h1>T.</h1>
+                        <span>Time Management</span>
+                    </div>
+                    <div class="dots-letter">
+                        <h1>S.</h1>
+                        <span>Self Control</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="white-space"></section>
+        <section class="quote-section">
+            <div class="quote-photo photo-1">
+                <div class="photo-overlay">
+                </div>
+            </div>
+            <div class="quote-container">
+                <div class="quote">
+                    "The goal of early childhood education should be to activate the child's own natural desire to learn."
+                </div>
+                <div class="author">-Dr. Maria Montessori</div>
+            </div>
+        </section>
+        <section class="white-space"></section>
+        <h4 class="sub-header">Our Programs</h4>
         <section class="pre-school programs">
             <div class="pre-school-info">
-                <h4>Pre-School</h4>
+                <h4>Pre-School Programs</h4>
                 <h5>Ages 3-5</h5>
-                <p>Montessori Lab School provides a non-conventional Early Childhood Education through our half- and full-day bilingual programs for three to five year olds. Our programs foster the love of learning, self-reliance and independence.</p>
+                <p>Montessori Lab School provides a non-conventional Early Childhood Education through our half- and full-day bilingual programs for three to five year olds. <br/>Our programs foster the love of learning, self-reliance and independence.</p>
                 <button class="btn pre-k-btn">Learn More</button>
             </div>
             <div class="img-wrapper"></div>
         </section>
-        
         <section class="elementary programs">
             <div class="elementary-info">
-                <h4>Elementary</h4>
+                <h4>Elementary Program</h4>
                 <h5>Ages 6-10</h5>
                 <p>At Montessori Lab School, we provide older children a full-day Elementary Education program that is designed to meet the intellectual, emotional and cultural needs of six to ten year olds.</p>
                 <button class="btn elementary-btn">Learn More</button>
             </div>
             <div class="img-wrapper"></div>
         </section>
-        
+        <!-- <section class="white-space"></section> -->
         <section class="credentials">
             <div class="flex-container">
-                <img src="./assets/namc-badge.png" alt="">
                 <img  src="./assets/45 Year Badge.png" alt="">
+                <img src="./assets/logo.png" alt="">
+                <img src="./assets/namc-badge.png" alt="">
             </div>
         </section>
-        <section class="contact-section">
+        <div class="value-statement">Hampton Road's Longest Running Montessori School.</div>
+        <!-- <section class="white-space"></section> -->
+        
+        <!-- <section class="white-space"></section> -->
+        <!-- <section class="contact-section">
             <div class="contact-overlay">
             </div>
             <div class="container contact">
-                <h5>Want more information?</h5>
-                <h3>Contact Us</h3>
-                <form>
+                <h3>Ready to Start the Process?</h3>
+                <h5>Send us your information</h5>
+                <form action="https://formsubmit.co/your@email.com" method="POST">
+                    <input type="text" name="_honey" style="display:none">
+
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <input type="hidden" name="_next" value="https://montessorilabschool.com/success.html">
+
                     <div class="input-wrap">
-                        <label for="">First Name</label><br/>
-                        <input type="text">
-                        
+                        <label for="">Name *</label><br/>
+                        <input required name='name' type="text">
                     </div>
                     <div class="input-wrap">
-                        <label for="">Last Name</label><br/>
-                        <input type="text">
+                        <label for="">Email *</label><br/>
+                        <input required name='email' type="text">
                     </div>
                     <div class="input-wrap">
-                        <label for="">Email</label><br/>
-                        <input type="text">
+                        <label for="">Phone *</label><br/>
+                        <input required name='phone' type="text">
+                    </div>
+                    <div class="child-info">
+                        <div class="input-wrap">
+                            <label for="">Child's Name *</label><br/>
+                            <input required name='child-name' type="text">
+                        </div>
+                        <div class="input-wrap">
+                            <label for="">Child's Age *</label><br/>
+                            <select required name='child-age'>
+                                <option value="2">2</option>
+                                <option selected value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="input-wrap">
-                        <label for="">Child's Age</label><br/>
-                        <input type="number">
+                        <label for="">Additional Information</label><br/>
+                        <textarea placeholder='Add any extra information about your child that may be relevant' name="message" id="" cols="30" rows="5"></textarea>
                     </div>
-                    <div class="input-wrap">
-                        <label for="">Message</label><br/>
-                        <textarea name="" id="" cols="30" rows="5"></textarea>
-                    </div>
-                    <button class="btn send-btn">Send</button>
+                    <button type='submit' class="btn send-btn">Send</button>
                 </form>
             </div>
-        </section>
-        
+        </section> -->
         <footer>
             <div class="footer-address">
                 <h5>Address</h5>
@@ -197,7 +260,7 @@
                 </address>
             </div>
             <div class="footer-phone">
-                <div><a href="tel:7575488762">757-548-8762</a> </div>
+                <div>Call Us: <br/><br/> <a href="tel:7575488762">757-548-8762</a> </div>
             </div>
             <div class="social-icon">
                     <a target="_blank" href="https://www.facebook.com/montessorilabschool">
@@ -211,6 +274,7 @@
                 <div>September-June</div>
             </div>
         </footer>
-        <script src="" async defer></script>
+
+        <script src="./main.js" async defer></script>
     </body>
 </html>
