@@ -11,58 +11,176 @@ function navBarMobile() {
 
 let cardData = [
   {dataOpen:1,
-  imgSrc:'assets/kids.jpg',
+  imgSrc: [
+  '/assets/india.jpg',
+  '/assets/hawaii.jpg',
+  '/assets/cultural-jewelry.jpg',
+  '/assets/girls-cooking.jpg',
+  '/assets/girl-cooking.jpg',
+  ],
+  imgDescription: [
+    'Indian Cultural Lesson',
+    'Hawaiian Day',
+    'Cultural Jewelry on Field Trip',
+    'Cooking local cuisine',
+    'Cooking local cuisine'
+  ],
   title:'International Focus',
+  color: 'rgb(247 201 17 / 97%)',
+  icon: "fa-solid fa-earth-asia"
   },
   {dataOpen:2,
-  imgSrc:'',
+    imgSrc: [
+      '/assets/bell-plates.jpg',
+      '/assets/hawaii-music.jpg',
+      ],
+      imgDescription: [
+        'Bell Plates performed for Elderly Home',
+        'Playing Hawaiian Music',
+      ],
+      isVideo:true,
+      video: [
+        '<iframe width="560" height="315" src="https://www.youtube.com/embed/_oG7uvVdSH4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+      ],
+      vidDescription: [
+        'Bell Plate Performance'
+      ],
   title:'Performing Arts',
+  color: 'rgb(2 170 185 / 97%)',
+  icon: "fa-solid fa-masks-theater"
   },
   {dataOpen:3,
-  imgSrc:'',
+    imgSrc: [
+      '/assets/trash-clean-up.jpg',
+      '/assets/friendship.jpg',
+      ],
+      imgDescription: [
+        'Cleaning up Local Trash',
+        'Developing friendships',
+      ],
+      isVideo:true,
+      video: [
+        '<iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmontessorilabschool%2Fvideos%2F1772095359735280%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>'
+      ],
+      vidDescription: [
+        'Peace Day 2016'
+      ],
   title:'Character Building',
+  color: 'rgb(79 202 70 / 97%)',
+  icon: "fa-solid fa-people-group"
   },
   {dataOpen:4,
-  imgSrc:'',
+    imgSrc: [
+      '/assets/kids-with-letters.jpg',
+      '/assets/girl-working.jpg',
+      '/assets/girl-counting.jpg',
+      '/assets/girl-counting-two.jpg',
+      '/assets/boy-geography.jpg',
+      ],
+      imgDescription: [
+        'Learning cursive letters together',
+        'Independent Work',
+        'Learning Early Math with Beads',
+        'Counting with Beads',
+        'Learning Geography'
+      ],
   title:'Academic Studies',
+  color: 'rgb(247 59 75 / 97%)',
+  icon: "fa-solid fa-graduation-cap"
   },
 ]
 
 // POP up creater
+function imageGrab(id) {
+  let img=[]
+  for (let i=0; i < cardData[id-1].imgSrc.length; i++) {
+    img.push( 
+      `
+      <div class='mySlides'>
+        <img src='${cardData[id - 1].imgSrc[i]}' alt="card image ${id}"></img>
+        <div class='img-caption'> ${cardData[id-1].imgDescription[i]}</div>
+      </div>
+      ` );
+  };
+  return img.join('');
+}
+function videoGrab(id) {
+  let vid=[]
+  for (let i=0; i < cardData[id-1].video.length; i++) {
+    vid.push( 
+      `
+      <div class='mySlides'>
+        ${cardData[id - 1].video[i]}
+        <div class='img-caption'> ${cardData[id-1].vidDescription[i]}</div>
+      </div>
+      ` );
+  };
+  return vid.join('');
+}
+
 const popUpParent= document.querySelector('.pop-up-modals-container');
-console.log(popUpParent)
 function createPopUp(id) {
     
+
+
 cardData
-.map(({ dataOpen, imgSrc, title}) => { 
+.map(({ dataOpen, title, color, icon, isVideo }) => { 
         const newContent = 
         `
-        <div id='${dataOpen}' class="modal" data-animation="slideInOutTop">
-            <div class="modal-dialog">
+        <div id='${dataOpen}' class="modal" data-animation="zoomInOut">
+            <div class="modal-dialog" style='background:${color}'>
                 <header class="modal-header">
-                    <h3>${title}</h3>
-                    <i class="fas fa-times" data-close onclick= "removeIsVisible('${dataOpen}')"></i>
+                    <i style='color:white;'class='${icon}'></i>
+                    <h3 style='margin-right:auto;'>${title}</h3>
+                    <i class="fa-solid fa-circle-xmark" data-close onclick= "removeIsVisible(${dataOpen})"></i>
                 </header>
                 <div class="modal-body">
                     <div class="img-wrapper">
-                        <img src=${imgSrc} alt="card image">
+                        ${imageGrab(dataOpen)}
+                        ${ isVideo ? videoGrab(dataOpen): ''}
+                    </div>
+                    <div class='btn-container'>
+                      <button class='slide-btn slide-left' onclick='plusDivs(-1)'><i class="fa-solid fa-circle-chevron-left"></i></button>
+                      <button class='slide-btn slide-right' onclick='plusDivs(1)'><i class="fa-solid fa-circle-chevron-right"></i></button>
                     </div>
                 </div>
             </div>
         </div>`;
-        console.log(newContent)
             if (dataOpen == id)
             popUpParent.insertAdjacentHTML("beforeend", newContent);})
             
 };
+
+var slideIndex = 1;
+
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
 const cards = document.querySelectorAll('.feature-card');
-console.log(cards)
 for (box of cards){
 box.addEventListener('click', function() {
+  // if ()
   const dataOpen = this.dataset.open
   createPopUp(dataOpen);
-  console.log(dataOpen)
+  showDivs(slideIndex);
         
     }) ;
 }
 
+function removeIsVisible(id) {
+  let elm = document.getElementById(id)
+  elm.remove()
+}

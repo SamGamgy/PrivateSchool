@@ -72,25 +72,35 @@
                     <input type="hidden" name="_next" value="https://montessorilabschool.com/success.html">
 
                     <div class="input-wrap">
-                        <label for="">Name *</label><br/>
-                        <input required name='name' type="text">
+                        <label for="name">Name *</label><br/>
+                        <input id='name' required name='name' type="text">
                     </div>
                     <div class="input-wrap">
-                        <label for="">Email *</label><br/>
-                        <input required name='email' type="text">
+                        <label for="email">Email *</label><br/>
+                        <input id='email' required name='email' type="text">
                     </div>
                     <div class="input-wrap">
-                        <label for="">Phone *</label><br/>
-                        <input required name='phone' type="text">
+                        <label for="phone">Phone *</label><br/>
+                        <input id='phone' required name='phone' type="tel">
+                    </div>
+                    <div class="input-wrap">
+                        <label for="program">Preferred Program</label> <br/>
+                        <select name="program" id="program">
+                            <option value=""></option>
+                            <option value="pre-k-limited">Pre-School Limited Week</option>
+                            <option value="pre-k-half">Pre-School Half Day</option>
+                            <option value="pre-k-full">Pre-School Full Day</option>
+                            <option value="elementary">Elementary Full Day</option>
+                        </select>
                     </div>
                     <div class="child-info">
                         <div class="input-wrap">
-                            <label for="">Child's Name *</label><br/>
-                            <input required name='child-name' type="text">
+                            <label for="child-name">Child's Name *</label><br/>
+                            <input id='child-name' required name='child-name' type="text">
                         </div>
                         <div class="input-wrap">
-                            <label for="">Child's Age *</label><br/>
-                            <select required name='child-age'>
+                            <label for="child-age">Child's Age *</label><br/>
+                            <select id='child-age' required name='child-age'>
                                 <option value="2">2</option>
                                 <option selected value="3">3</option>
                                 <option value="4">4</option>
@@ -103,9 +113,10 @@
                             </select>
                         </div>
                     </div>
+                    
                     <div class="input-wrap">
-                        <label for="">Additional Information</label><br/>
-                        <textarea placeholder='Add any extra information about your child that may be relevant' name="message" id="" cols="30" rows="5"></textarea>
+                        <label for="message">Additional Information</label><br/>
+                        <textarea placeholder='Add any extra information about your child that may be relevant' name="message" id="message" cols="30" rows="5"></textarea>
                     </div>
                     <button type='submit' class="btn send-btn">Send</button>
                 </form>
@@ -122,7 +133,7 @@
                 </address>
             </div>
             <div class="footer-phone">
-                <div>Call Us: <br/><br/> <a href="tel:7575488762">757-548-8762</a> </div>
+                <div><a href="tel:7575488762">757-548-8762</a> </div>
             </div>
             <div class="social-icon">
                 <a target="_blank" href="https://www.facebook.com/montessorilabschool">
@@ -135,6 +146,6 @@
                 <div>September-June : 8:30 a.m. - 4:00 p.m.</div>
             </div>
         </footer>
-        <script src="" async defer></script>
+        <script src="./main.js" async defer></script>
     </body>
 </html>

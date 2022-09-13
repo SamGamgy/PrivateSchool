@@ -1,13 +1,9 @@
 @media screen and (min-width:1251px){
   .main-header {font-size: 5.2rem;}
-  .nav-bar{font-size: 1.5rem; height: 7%;}
+  .nav-bar{font-size: 1.5rem; height: 4rem;} 
   .sub-nav-items li a {font-size: 1rem;}
-  .nav-bar li a {padding-bottom: 2rem;}
-  .sub-nav-items {top:3.5rem;}
-  .hover-underline-animation:after{bottom:3px}
-  .nav-logo .hover-underline-animation:after {
-    bottom: 26px;
-  }
+  .hover-underline-animation:after{bottom:12px}
+  .nav-logo .hover-underline-animation:after { bottom: 16px;}
   .head-content p {
     font-size: 1.7rem;
     line-height: 38px;
@@ -17,9 +13,7 @@
     background-size: cover;
     background-image: linear-gradient(90deg, rgba(234,234,234,0) 0%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 100%), url(./assets/kids.jpg);
 }
-  .quote-section {
-    height:500px;
-  }
+  .quote-section {height:500px;}
   .quote-photo{height: inherit;}
   .quote-container{
     padding:10%;
@@ -28,14 +22,19 @@
   }
   .quote{font-size: 3rem;}
   textarea {width: 80%;}
+  .programs p {
+    font-size: 2rem;
+  }
 }
 @media screen and (max-width: 1250px) {
 .flex-container{padding:1rem 5% ;}
 }
-/* .cards {
-  position: absolute;
-  top: 36rem;
-} */
+.sub-nav-items {top:4rem;}
+.sub-nav-items li{margin:0; padding:0 1rem;}
+.sub-nav-items li a {padding: 0;}
+.hover-underline-animation:after{bottom:16px}
+.program-descript{width:75%}
+
 .card-cover .sub-header {
   margin-top: 20px;
 }
@@ -47,11 +46,11 @@
     }
     .nav-bar.responsive li.menu-items {
         z-index: 100;
-        display: block;
+        display: flex;
     }
     .nav-bar.nav-bar.responsive .menu{
         position: absolute;
-        top: 50px;
+        top: 4rem;
         right: 0;
         background: #839fe2f0;
         width: 201px;
@@ -65,9 +64,7 @@
     .nav-bar li:hover .sub-nav-items{
         display: none;
     }
-    .head-content {
-      padding: 30px 2% 0;
-    }
+    
     .elementary .img-wrapper {
       background-size: contain;
       background-image: linear-gradient(90deg, rgba(234,234,234,0) 0%, rgba(255,255,255,1) 55%, rgba(255,255,255,1) 100%), url(./assets/kids.jpg);
@@ -75,6 +72,7 @@
     .programs p {
       font-size: 1.2rem;
     }
+    .program-descript{width:95%}
     .cards {
       position: relative;
       top: 0;
@@ -90,9 +88,14 @@
     .contact {
       width: 60%;
     }
+    .modal{
+      padding:20% 10%;
+    }
+    
   }
 
   @media screen and (max-width: 825px) {
+    .container{padding: 0 0.5rem;}
     .long{display: none;}
     .short{display: inline-block;}
     
@@ -114,11 +117,15 @@
       margin-right: 1rem;
       margin-top: 2rem;
     }
+    .program .scale-down{font-size: 4rem;}
+    .montessori div, .traditional div{ font-size: 1.1rem;}
+    .comparison-points{padding: 0; gap: 0.5rem;}
+    #calender iframe{
+      width: 90vw;
+      height: calc(90vw * 1.4142);
+    }
     .flex-container {
       padding: 1rem 2rem;
-    }
-    .flex-container img {
-      width: 200px;
     }
     .years-badge{
       width:115px;
@@ -127,10 +134,39 @@
       flex-wrap: wrap;
       justify-content: space-evenly;
     }
+    .btn-container{
+      top:90%;
+      left: 0;
+      right: 0;
+    }
+    .modal-dialog{
+      padding: 1rem;
+    }
+    .modal{
+      padding: 20% 5%;
+    }
+    .value-statement{
+      font-size: 2.4rem;
+    }
+    .photo-overlay{
+      height: auto;
+    }
+    .quote-photo{
+      height: 300px;
+    }
+    .quote-section{
+      height: 300px;
+    }
+    .quote {
+      font-size: 1.5rem;
+    }
+    .author {
+      font-size: 1.5rem;
+    }
   }
 
   @media screen and (max-width:550px) {
-    .nav-logo{display: none;}
+    .nav-bar .nav-logo{display: none;}
     .nav-bar .phone-nav { margin-left: auto;}
     .nav-bar {gap:0}
     .main-header {
@@ -166,19 +202,58 @@
       margin: -4rem 0.5rem;
       margin-right: 1rem;
     }
+    .program .scale-down{font-size: 3.3rem;}
+    .montessori div, .traditional div{ 
+      padding: 4%;
+      height: 185px;
+    }
+    .montessori h5, .traditional h5{font-size: 1.5rem;}
     .mission-statements {
       gap: 1rem;
     }
-    .contact {
+    .contact-section .contact {
       width:100%;
-      margin-bottom: 2rem;
     }
-    .flex-container img {
-      width: 150px;
+    .modal-header{
+      gap: 1rem;
+    }
+    .modal-header h3{
+      font-size: 1.2rem;
+    }
+    .value-statement{
+      font-size: 2rem;
+    }
+    .responsive-space{
+      display: none;
     }
   }
 
-  @media screen and (max-width:480px) {
+  @media screen and (max-width:489px) {
+    .img-wrapper{
+      width: 100%;
+    }
+    .modal-header i {
+      font-size: 2rem;
+    }
+    .img-caption{
+      font-size: 1rem;
+      margin: 1rem 1rem 3rem;
+    }
+    .btn-container{
+      top: 100%;
+    }
+    .modal-dialog{
+      padding:1rem 0.5rem;
+    }
+    .head-content {
+      padding: 30px 2% 0;
+    }
+    .head-content p{
+      font-size: 1rem;
+    }
+    .head-content h4 {
+      font-size: 2.5rem;
+    }
     .head-overlay{top:15%;}
     .cards {
       height: 1515px;
@@ -186,8 +261,17 @@
     .mission-statements {
       display: block;
     }
-    .flex-container img {
-      width: 115px;
+    .btn {
+      font-size: 1.5rem;
     }
+    .photo-1{
+      background-image: none;
+    }
+    .photo-overlay{
+      top:0;
+      bottom:0;
+    }
+    .program .scale-down{font-size: 2.8rem;}
+    .sub-header{font-size: 3.5rem;}
   }
   
