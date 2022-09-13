@@ -171,6 +171,8 @@ button {
 }
 .nav-logo .sub-text{
     font-size: 0.7rem;
+    margin-bottom: auto;
+    padding: 0.2rem;
 }
 .logo {
     width:50px;
@@ -249,7 +251,7 @@ font-size: 1.6rem;
 font-weight: 300;
 padding-top: 1rem;
 }
-.nav-logo .active.hover-underline-animation {
+.nav-logo .hover-underline-animation {
     display: block;
 }
 .nav-bar .icon {
