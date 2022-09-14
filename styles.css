@@ -28,6 +28,7 @@ body {
     color: var(--grey-main);
     margin:0;
     padding:4rem 0 0;
+    overflow-x: hidden;
 }
 
 *,
@@ -103,7 +104,16 @@ button {
     font-size: 1.2rem;
     transition: translate 0.4s ease-in-out;
 }
+.floating-btn div {
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
 .floating-btn:hover{
+    translate: -80px 0;
+}
+.floating-btn.open{
     translate: -80px 0;
 }
 .float-icons {
@@ -844,8 +854,11 @@ li.icon{
 }
 .program-imgs {
     display: flex;
-    gap:1rem;
+    gap: 1rem;
     margin: 3rem 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 #elementary  .bullet {
     font-size: 1.2rem;

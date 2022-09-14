@@ -8,15 +8,22 @@ function navBarMobile() {
     }
   }
 
+function openFloat() {
+  let float = document.getElementById('float')
+  console.log(float)
+  if (!float.classList.contains('open')) {
+    float.classList.add('open')}
+    else{float.classList.remove('open')}
+}
 
 let cardData = [
   {dataOpen:1,
   imgSrc: [
-  '/assets/india.jpg',
-  '/assets/hawaii.jpg',
-  '/assets/cultural-jewelry.jpg',
-  '/assets/girls-cooking.jpg',
-  '/assets/girl-cooking.jpg',
+  './assets/india.jpg',
+  './assets/hawaii.jpg',
+  './assets/cultural-jewelry.jpg',
+  './assets/girls-cooking.jpg',
+  './assets/girl-cooking.jpg',
   ],
   imgDescription: [
     'Indian Cultural Lesson',
@@ -31,8 +38,8 @@ let cardData = [
   },
   {dataOpen:2,
     imgSrc: [
-      '/assets/bell-plates.jpg',
-      '/assets/hawaii-music.jpg',
+      './assets/bell-plates.jpg',
+      './assets/hawaii-music.jpg',
       ],
       imgDescription: [
         'Bell Plates performed for Elderly Home',
@@ -51,8 +58,8 @@ let cardData = [
   },
   {dataOpen:3,
     imgSrc: [
-      '/assets/trash-clean-up.jpg',
-      '/assets/friendship.jpg',
+      './assets/trash-clean-up.jpg',
+      './assets/friendship.jpg',
       ],
       imgDescription: [
         'Cleaning up Local Trash',
@@ -71,11 +78,11 @@ let cardData = [
   },
   {dataOpen:4,
     imgSrc: [
-      '/assets/kids-with-letters.jpg',
-      '/assets/girl-working.jpg',
-      '/assets/girl-counting.jpg',
-      '/assets/girl-counting-two.jpg',
-      '/assets/boy-geography.jpg',
+      './assets/kids-with-letters.jpg',
+      './assets/girl-working.jpg',
+      './assets/girl-counting.jpg',
+      './assets/girl-counting-two.jpg',
+      './assets/boy-geography.jpg',
       ],
       imgDescription: [
         'Learning cursive letters together',
