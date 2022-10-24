@@ -10,7 +10,7 @@ Client wanted a clean design, featuring the key value propositions of the school
 
 The Design is personlized to help brand their school as the internationally focused and high quality cirriculum that they offer.
 
-You can see the site here: https://samgamgy.github.io/montessori-lab-school/
+You can see the site here: https://samgamgy.github.io/PrivateSchool/
 
 Stock photos from Pexels
 
