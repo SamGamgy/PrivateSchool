@@ -23,12 +23,12 @@
   .quote{font-size: 3rem;}
   textarea {width: 80%;}
   .programs p {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 @media screen and (max-width: 1250px) {
 .flex-container{padding:1rem 5% ;}
-}
+.head-overlay { top : 16% }
 .sub-nav-items {top:4rem;}
 .sub-nav-items li{margin:0; padding:0 1rem;}
 .sub-nav-items li a {padding: 0;}
@@ -37,6 +37,7 @@
 
 .card-cover .sub-header {
   margin-top: 20px;
+}
 }
 @media screen and (max-width: 1000px) {
     .home-sub{display: block;}
@@ -78,7 +79,7 @@
       top: 0;
       height: 715px;
     }
-    .card-cover{display: none;}
+    .card-cover, .click-cover {display: none;}
     .feature-card{
       transition: all .2s ease-in;
     }
@@ -88,10 +89,13 @@
     .contact {
       width: 60%;
     }
-    .modal{
+    /* .modal{
       padding:20% 10%;
+    } */
+    .mySlides img {
+      max-height: 60vh;
+      height: auto;
     }
-    
   }
 
   @media screen and (max-width: 825px) {
@@ -142,9 +146,9 @@
     .modal-dialog{
       padding: 1rem;
     }
-    .modal{
+    /* .modal{
       padding: 20% 5%;
-    }
+    } */
     .value-statement{
       font-size: 2.4rem;
     }

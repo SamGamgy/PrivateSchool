@@ -42,7 +42,7 @@ let cardData = [
       './assets/hawaii-music.jpg',
       ],
       imgDescription: [
-        'Bell Plates performed for Elderly Home',
+        'Bell Plates performed for Seniors',
         'Playing Hawaiian Music',
       ],
       isVideo:true,

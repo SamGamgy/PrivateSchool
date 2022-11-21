@@ -191,7 +191,7 @@ button {
 .sub-nav-items {
     display: none;
     position: absolute;
-    top:3rem;
+    top:4rem;
     left:0rem;
     background: var(--light-blue);
     width: max-content;
@@ -392,8 +392,20 @@ li.icon{
     position: absolute;
     bottom: 0rem;
 }
+.click-cover {
+    height: 65px;
+    position: absolute;
+    bottom: 0rem;
+    z-index: 1;
+}
+.click-header {
+    letter-spacing: 1px;
+    color: rgb(197 197 197);
+    font-size: 2rem;
+    font-weight: 200;
+}
 .card-cover .sub-header  {
-    margin-top: 50px;
+    margin-top: 15px;
 }
 .icon-wrapper {
     color: white;
@@ -412,6 +424,18 @@ li.icon{
 }
 .feature-4 {
     background-color: rgb(247, 59, 75);
+}
+.feature-1:hover {
+    background-color: rgb(228, 201, 96);
+}
+.feature-2:hover {
+    background-color: rgb(117, 208, 216);
+}
+.feature-3:hover {
+    background-color: rgb(154, 223, 149);
+}
+.feature-4:hover {
+    background-color: rgb(240, 132, 141);
 }
 .feature-card h5 {
     font-size:1.3rem;
@@ -1039,6 +1063,7 @@ input:focus, textarea:focus {
 .description {
     font-size: 1.3rem;
     margin-top: 1.5rem;
+    font-weight: 300;
 }
 .calender-img{
     width: 75%;
@@ -1097,33 +1122,33 @@ iframe {
 /* modal */
 .modal{
     position: fixed;
-    border-radius: 10px;
-    top: 0;
+    top: 125px;
     bottom: 0;
     left: 0;
     right: 0;
     width: 100%;
     height: 100%;
     margin: auto;
-    padding: 11rem;
+    /* padding: 8rem 9rem; */
     background-color: rgba(184, 184, 184, 0.603);
     z-index: 200;
-    animation:fadeIn 1.3s;
+    animation: fadeIn 1.3s;
     
 }
 .modal-body{
     position: relative;
 }
 .modal-body .img-wrapper{
-    width: 90%;
-    height: 500px;
+    width: 100%;
+    height: 80vh;
     margin: auto;
     position: relative;
 }
 .modal-dialog{
     opacity: 0.9;
     padding: 1rem 4rem 1rem;
-    border-radius: 10px;
+    width: 100%;
+    height: 100%;
     animation: zoomInOut 1s 
 }
 .modal-header{
@@ -1140,11 +1165,13 @@ iframe {
     color: var(--red);
 }
 .modal-header i:hover {
-    color: var(--light-red);
+    color: rgb(235, 186, 186);
+    cursor: pointer;
+    transform: scale(1.05);
 }
 .mySlides{
     display: block;
-    height: fit-content;
+    /* height: fit-content; */
     position: absolute;
     margin: auto;
     top: 0;
@@ -1154,8 +1181,8 @@ iframe {
 }
 .mySlides img{
     object-fit: contain;
-    max-height: 400px;
-    border: 5px solid #ffffffd6;
+    height: 60vh;
+    /* border: 5px solid #ffffffd6; */
     width: auto;
     margin: 0 auto;
     display: block;
@@ -1164,22 +1191,26 @@ iframe {
 .mySlides iframe{
     display: block;
     margin: auto;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
     border: 5px solid white;
 }
-.img-caption{
+.img-caption {
     font-size: 2rem;
     text-align: center;
     margin: 2rem;
+    color: white;
+    font-weight: 300;
 }
 .btn-container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     position: absolute;
     left: -3.25rem;
     right: -3.25rem;
-    top: 50%;
+    top: 92%;
 }
 .slide-btn {
     background: none;
@@ -1189,7 +1220,9 @@ iframe {
     transition: all 0.2s ease;
 }
 .slide-btn:hover{
-    color: var(--dark-blue);
+    color: rgb(181, 181, 235);
+    cursor: pointer;
+    transform: scale(1.02);
 }
 .success h5{
     text-align: center;
