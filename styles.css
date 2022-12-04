@@ -647,7 +647,7 @@ li.icon{
     background-size: cover;
 }
 .hero-2{
-    background:  url(./assets/explore.jpg);
+    background:  url(./assets/explore.JPG);
     background-position: top;
     background-size: cover;
 }
@@ -778,7 +778,7 @@ li.icon{
     height: 600px;
     background-position: top;
     background-size: cover;
-    background-image: linear-gradient(90deg, rgba(234,234,234,0) 60%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 100%), url(./assets/GAVIN.jpg);
+    background-image: linear-gradient(90deg, rgba(234,234,234,0) 60%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 100%), url(./assets/GAVIN.JPG);
 }
 .elementary-info {
     margin-right: 3rem;

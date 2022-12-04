@@ -42,7 +42,7 @@ let cardData = [
     imgSrc: [
       './assets/bell-plates-german-background.JPG',
       './assets/hawaii-music.jpg',
-      './assets/tonebars2.jpg',
+      './assets/tonebars2.JPG',
       './assets/TONE-BARS-REGULAR.JPG',
       
       ],
