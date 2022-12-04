@@ -647,7 +647,7 @@ li.icon{
     background-size: cover;
 }
 .hero-2{
-    background:  url(./assets/book-shelf.jpg);
+    background:  url(./assets/explore.jpg);
     background-position: top;
     background-size: cover;
 }
@@ -743,15 +743,14 @@ li.icon{
     position: relative;
 }
 .pre-school .img-wrapper {
-    width: 100%;
+    width: 50%;
     height: 600px;
-    background-position: right;
+    margin-left: auto;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: linear-gradient(270deg, rgba(234,234,234,0) 0%, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 100%), url(./assets/eating-snack.jpg);
+    background-image: linear-gradient(270deg, rgba(234,234,234,0) 43%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 101%), url(./assets/kids-with-letters2.jpg);
     background-color: white;
-    /* -webkit-clip-path: polygon(36% 0, 100% 0%, 100% 100%, 58% 100%);
-    clip-path: polygon(36% 0, 100% 0%, 100% 100%, 58% 100%); */
 }
 .pre-school-info {
     margin-left: 3rem;
@@ -774,14 +773,12 @@ li.icon{
     height:600px;
     background: var(--white);
 }
-.elementary .img-wrapper {
-    width: 100%;
+ .elementary .img-wrapper {
+    width: 56%;
     height: 600px;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: linear-gradient(90deg, rgba(234,234,234,0) 0%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 100%), url(./assets/kids.jpg);
-    background-color: white;
+    background-position: top;
+    background-size: cover;
+    background-image: linear-gradient(90deg, rgba(234,234,234,0) 60%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 100%), url(./assets/GAVIN.jpg);
 }
 .elementary-info {
     margin-right: 3rem;
@@ -932,9 +929,8 @@ li.icon{
 }
 /* contact */
 .contact-section {
-    background-image: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 10%, rgba(4, 8, 48, 0.685) 100%), 
-    url(./assets/school-supplies.jpg);
-    background-position: center;
+    background-image: linear-gradient(to bottom, rgb(255 255 255) 0%, rgb(255 255 255 / 35%) 50%, rgba(4, 8, 48, 0.685) 100%), url(./assets/colored\ pencils.JPG);
+    background-position: bottom;
     background-size: cover;
     padding: 0 0;
     height: max-content;
@@ -955,7 +951,7 @@ li.icon{
 }
 .contact h3 {
     font-size: 2rem;
-    color: #f0d018;
+    color: #273e74;
     margin-bottom: 3rem;
 }
 .input-wrap {
@@ -1145,7 +1141,6 @@ iframe {
     position: relative;
 }
 .modal-dialog{
-    opacity: 0.9;
     padding: 1rem 4rem 1rem;
     width: 100%;
     height: 100%;
@@ -1171,7 +1166,7 @@ iframe {
 }
 .mySlides{
     display: block;
-    /* height: fit-content; */
+    height: fit-content;
     position: absolute;
     margin: auto;
     top: 0;
@@ -1191,8 +1186,8 @@ iframe {
 .mySlides iframe{
     display: block;
     margin: auto;
-    width: 100%;
-    height: 100%;
+    /* width: 75%; */
+    /* height: 75%; */
     border-radius: 10px;
     border: 5px solid white;
 }

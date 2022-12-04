@@ -23,14 +23,16 @@ let cardData = [
   './assets/hawaii.jpg',
   './assets/cultural-jewelry.jpg',
   './assets/girls-cooking.jpg',
-  './assets/girl-cooking.jpg',
+  './assets/OKTOBERFEST-JOHANNES.JPG',
+  './assets/flags.JPG',
   ],
   imgDescription: [
     'Indian Cultural Lesson',
     'Hawaiian Day',
     'Cultural Jewelry on Field Trip',
-    'Cooking local cuisine',
-    'Cooking local cuisine'
+    'Cooking cultural cuisine',
+    'Celebrating OktoberFest',
+    'International Flags taught to the children',
   ],
   title:'International Focus',
   color: 'rgb(247 201 17 / 97%)',
@@ -38,19 +40,27 @@ let cardData = [
   },
   {dataOpen:2,
     imgSrc: [
-      './assets/bell-plates.jpg',
+      './assets/bell-plates-german-background.JPG',
       './assets/hawaii-music.jpg',
+      './assets/tonebars2.jpg',
+      './assets/TONE-BARS-REGULAR.JPG',
+      
       ],
       imgDescription: [
-        'Bell Plates performed for Seniors',
+        'Bell Plates performed for OktoberFest',
         'Playing Hawaiian Music',
+        'Tone Bells used to teach Music Fundamentals',
+        'Tone Bars used by Elementary to play songs',
+        
       ],
       isVideo:true,
       video: [
-        '<iframe width="560" height="315" src="https://www.youtube.com/embed/_oG7uvVdSH4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+        '<iframe width="800" height="448" src="https://www.youtube.com/embed/_oG7uvVdSH4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        '<iframe width="800" height="448" src="https://www.youtube-nocookie.com/embed/5o-i-R2pyTw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
       ],
       vidDescription: [
-        'Bell Plate Performance'
+        'St. Patricks Day Bell Plate Performance',
+        'Oktoberfest Bell Plate Performance'
       ],
   title:'Performing Arts',
   color: 'rgb(2 170 185 / 97%)',
@@ -60,14 +70,16 @@ let cardData = [
     imgSrc: [
       './assets/trash-clean-up.jpg',
       './assets/friendship.jpg',
+      './assets/american-flag.JPG'
       ],
       imgDescription: [
         'Cleaning up Local Trash',
         'Developing friendships',
+        'Celebrating the American Flag'
       ],
       isVideo:true,
       video: [
-        '<iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmontessorilabschool%2Fvideos%2F1772095359735280%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>'
+        '<iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmontessorilabschool%2Fvideos%2F1772095359735280%2F&show_text=false&width=560&t=0" width="800" height="448" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>'
       ],
       vidDescription: [
         'Peace Day 2016'
@@ -79,17 +91,19 @@ let cardData = [
   {dataOpen:4,
     imgSrc: [
       './assets/kids-with-letters.jpg',
-      './assets/girl-working.jpg',
+      './assets/SOLAR-SYSTEM.JPG',
       './assets/girl-counting.jpg',
       './assets/girl-counting-two.jpg',
       './assets/boy-geography.jpg',
+      './assets/writing.jpg',
       ],
       imgDescription: [
         'Learning cursive letters together',
-        'Independent Work',
+        'Solar System Learning Tools',
         'Learning Early Math with Beads',
         'Counting with Beads',
-        'Learning Geography'
+        'Learning Geography',
+        'Practicing Math & Writing'
       ],
   title:'Academic Studies',
   color: 'rgb(247 59 75 / 97%)',

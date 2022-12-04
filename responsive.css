@@ -8,11 +8,6 @@
     font-size: 1.7rem;
     line-height: 38px;
 }
-  .elementary .img-wrapper {
-    width: 50%;
-    background-size: cover;
-    background-image: linear-gradient(90deg, rgba(234,234,234,0) 0%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 100%), url(./assets/kids.jpg);
-}
   .quote-section {height:500px;}
   .quote-photo{height: inherit;}
   .quote-container{
@@ -37,6 +32,23 @@
 
 .card-cover .sub-header {
   margin-top: 20px;
+}
+.elementary .img-wrapper {
+  width: 100%;
+  height: 600px;
+  background-position: top;
+  background-size: cover;
+  background-image: linear-gradient(90deg, rgba(234,234,234,0) 0%, rgba(255,255,255,1) 90%, rgba(255,255,255,1) 100%), url(./assets/GAVIN.jpg);
+}
+.pre-school .img-wrapper {
+  width: 90%;
+  height: 600px;
+  margin-left: auto;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(270deg, rgba(234,234,234,0) 0%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 101%), url(./assets/kids-with-letters2.jpg);
+  background-color: white;
 }
 }
 @media screen and (max-width: 1000px) {
@@ -66,10 +78,10 @@
         display: none;
     }
     
-    .elementary .img-wrapper {
+    /* .elementary .img-wrapper {
       background-size: contain;
       background-image: linear-gradient(90deg, rgba(234,234,234,0) 0%, rgba(255,255,255,1) 55%, rgba(255,255,255,1) 100%), url(./assets/kids.jpg);
-    }
+    } */
     .programs p {
       font-size: 1.2rem;
     }
@@ -102,12 +114,29 @@
     .container{padding: 0 0.5rem;}
     .long{display: none;}
     .short{display: inline-block;}
-    
+    .mySlides iframe {
+      display: block;
+      margin: auto;
+      width: 90%;
+      max-height: 360px;
+      border-radius: 10px;
+      border: 5px solid white;
+    }
     .pre-school-info {
       margin-left: 1rem;
       margin-top: 2rem;
+      width:60%;
     }
-    
+    .pre-school .img-wrapper {
+      width: 100%;
+      height: 600px;
+      margin-right: auto;
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: linear-gradient(270deg, rgba(234,234,234,0) 0%, rgba(255,255,255,1) 59%, rgba(255,255,255,1) 101%), url(./assets/kids-with-letters2.jpg);
+      background-color: white;
+  }
     .programs h4{
       font-size: 2rem;
     }
@@ -116,11 +145,14 @@
     }
     .elementary .img-wrapper {
       background-size: cover;
+      background-image: linear-gradient(90deg, rgba(234,234,234,0) -20%, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 100%), url(./assets/GAVIN.jpg);
     }
     .elementary-info {
       margin-right: 1rem;
       margin-top: 2rem;
+      width: 60%;
     }
+
     .program .scale-down{font-size: 4rem;}
     .montessori div, .traditional div{ font-size: 1.1rem;}
     .comparison-points{padding: 0; gap: 0.5rem;}
@@ -176,7 +208,7 @@
     .main-header {
       font-size: 3rem;
     }
-    .pre-school{
+    /* .pre-school{
       height: max-content;
     }
     .pre-school-info {
@@ -184,8 +216,8 @@
       width: 99%;
       margin: 2rem 0.5rem -5rem;
       margin-right: 1rem;
-    }
-    .pre-school .img-wrapper{
+    } */
+    /* .pre-school .img-wrapper{
       width: 93%;
       background-size: contain;
       margin: 0 1rem;
@@ -196,8 +228,8 @@
       background-size: contain;
       margin: 0 1rem;
       background-image: url(./assets/kids.jpg);
-    }
-    .elementary{
+    } */
+    /* .elementary{
       height: max-content;
     }
     .elementary-info{
@@ -205,7 +237,7 @@
       width: 95%;
       margin: -4rem 0.5rem;
       margin-right: 1rem;
-    }
+    } */
     .program .scale-down{font-size: 3.3rem;}
     .montessori div, .traditional div{ 
       padding: 4%;
@@ -236,6 +268,10 @@
     .img-wrapper{
       width: 100%;
     }
+    
+    .floating-btn {
+      display: none;
+    }
     .modal-header i {
       font-size: 2rem;
     }
@@ -244,7 +280,7 @@
       margin: 1rem 1rem 3rem;
     }
     .btn-container{
-      top: 100%;
+      top: 87%;
     }
     .modal-dialog{
       padding:1rem 0.5rem;
