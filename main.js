@@ -44,6 +44,7 @@ let cardData = [
       './assets/hawaii-music.jpg',
       './assets/tonebars2.JPG',
       './assets/TONE-BARS-REGULAR.JPG',
+      './assets/ely-violin.jpg'
       
       ],
       imgDescription: [
@@ -51,6 +52,7 @@ let cardData = [
         'Playing Hawaiian Music',
         'Tone Bells used to teach Music Fundamentals',
         'Tone Bars used by Elementary to play songs',
+        'Ely performing Violin'
         
       ],
       isVideo:true,
@@ -70,12 +72,15 @@ let cardData = [
     imgSrc: [
       './assets/trash-clean-up.jpg',
       './assets/friendship.jpg',
-      './assets/american-flag.JPG'
+      './assets/american-flag.JPG',
+      './assets/senior-performance.jpg'
+      
       ],
       imgDescription: [
         'Cleaning up Local Trash',
         'Developing friendships',
-        'Celebrating the American Flag'
+        'Celebrating the American Flag',
+        'Performing for the Senior Center'
       ],
       isVideo:true,
       video: [
@@ -92,18 +97,18 @@ let cardData = [
     imgSrc: [
       './assets/kids-with-letters.jpg',
       './assets/SOLAR-SYSTEM.JPG',
-      './assets/girl-counting.jpg',
-      './assets/girl-counting-two.jpg',
       './assets/boy-geography.jpg',
       './assets/writing.jpg',
+      './assets/olivia-geography.jpg',
+      './assets/girl-counting-two.jpg'
       ],
       imgDescription: [
         'Learning cursive letters together',
         'Solar System Learning Tools',
-        'Learning Early Math with Beads',
-        'Counting with Beads',
-        'Learning Geography',
-        'Practicing Math & Writing'
+        'Learning South American Flags',
+        'Practicing Math & Writing',
+        'Olivia presenting her Geography lesson',
+        'Learning to Count'
       ],
   title:'Academic Studies',
   color: 'rgb(247 59 75 / 97%)',
@@ -152,7 +157,7 @@ cardData
             <div class="modal-dialog" style='background:${color}'>
                 <header class="modal-header">
                     <i style='color:white;'class='${icon}'></i>
-                    <h3 style='margin-right:auto;'>${title}</h3>
+                    
                     <i class="fa-solid fa-circle-xmark" data-close onclick= "removeIsVisible(${dataOpen})"></i>
                 </header>
                 <div class="modal-body">
@@ -160,10 +165,10 @@ cardData
                         ${imageGrab(dataOpen)}
                         ${ isVideo ? videoGrab(dataOpen): ''}
                     </div>
-                    <div class='btn-container'>
+                </div>
+                <div class='btn-container'>
                       <button class='slide-btn slide-left' onclick='plusDivs(-1)'><i class="fa-solid fa-circle-chevron-left"></i></button>
                       <button class='slide-btn slide-right' onclick='plusDivs(1)'><i class="fa-solid fa-circle-chevron-right"></i></button>
-                    </div>
                 </div>
             </div>
         </div>`;

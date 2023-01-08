@@ -305,7 +305,7 @@ li.icon{
     width: 100%;
     background: #000000ab;
     position: absolute;
-    top: 10%;
+    top: 20%;
     height: max-content;
 }
 
@@ -373,6 +373,7 @@ li.icon{
 }
 .feature-card {
     width:200px;
+    position:relative;
     height: 350px;
     overflow: hidden;
     color:white;
@@ -392,16 +393,23 @@ li.icon{
     position: absolute;
     bottom: 0rem;
 }
-.click-cover {
-    height: 65px;
+.photo-tag{
+    text-align: center;
     position: absolute;
-    bottom: 0rem;
+    margin: auto;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+.click-cover {
+    position: absolute;
+    bottom: 2rem;
     z-index: 1;
 }
 .click-header {
     letter-spacing: 1px;
     color: rgb(197 197 197);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 200;
 }
 .card-cover .sub-header  {
@@ -1123,7 +1131,7 @@ iframe {
     left: 0;
     right: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     margin: auto;
     /* padding: 8rem 9rem; */
     background-color: rgba(184, 184, 184, 0.603);
@@ -1136,14 +1144,14 @@ iframe {
 }
 .modal-body .img-wrapper{
     width: 100%;
-    height: 80vh;
+    height: 60vh;
     margin: auto;
     position: relative;
 }
 .modal-dialog{
     padding: 1rem 4rem 1rem;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     animation: zoomInOut 1s 
 }
 .modal-header{
@@ -1177,11 +1185,12 @@ iframe {
 .mySlides img{
     object-fit: contain;
     height: 60vh;
-    /* border: 5px solid #ffffffd6; */
     width: auto;
+    max-width: 80%;
     margin: 0 auto;
     display: block;
     border-radius: 20px;
+    border: 3px solid #ffffffb0;
 }
 .mySlides iframe{
     display: block;
@@ -1205,7 +1214,7 @@ iframe {
     position: absolute;
     left: -3.25rem;
     right: -3.25rem;
-    top: 92%;
+    bottom: 10%;
 }
 .slide-btn {
     background: none;

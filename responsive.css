@@ -117,7 +117,7 @@
     .mySlides iframe {
       display: block;
       margin: auto;
-      width: 90%;
+      width: 80%;
       max-height: 360px;
       border-radius: 10px;
       border: 5px solid white;
@@ -171,7 +171,6 @@
       justify-content: space-evenly;
     }
     .btn-container{
-      top:90%;
       left: 0;
       right: 0;
     }
@@ -268,7 +267,9 @@
     .img-wrapper{
       width: 100%;
     }
-    
+    .mySlides{
+      height:auto;
+    }
     .floating-btn {
       display: none;
     }
@@ -278,9 +279,6 @@
     .img-caption{
       font-size: 1rem;
       margin: 1rem 1rem 3rem;
-    }
-    .btn-container{
-      top: 87%;
     }
     .modal-dialog{
       padding:1rem 0.5rem;

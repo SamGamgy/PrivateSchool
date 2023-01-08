@@ -51,7 +51,7 @@
                         <li class="menu-items hover-underline-animation"><a href="./parents.html">Parents</a>
                             <ul class="sub-nav-items">
                                 <li><a href="./parents.html#what-is-montessori">What is Montessori?</a></li>
-                                <li><a href="./parents.html#calender">School Calender</a></li>
+                                <li><a href="./parents.html#calender">School Calendar</a></li>
                                 <li><a href="./parents.html#reading">Recommended Reading</a></li>
                             </ul>
                             </li>
@@ -95,7 +95,7 @@
                     <div class="input-wrap">
                         <label for="program">Preferred Program</label> <br/>
                         <select name="program" id="program">
-                            <option value=""></option>
+                            <option style='display: none;' disabled selected value=""></option>
                             <option value="pre-k-limited">Pre-School Limited Week</option>
                             <option value="pre-k-half">Pre-School Half Day</option>
                             <option value="pre-k-full">Pre-School Full Day</option>
@@ -110,8 +110,9 @@
                         <div class="input-wrap">
                             <label for="child-age">Child's Age *</label><br/>
                             <select id='child-age' required name='child-age'>
+                                <option style='display: none;' disabled selected value=""></option>
                                 <option value="2">2</option>
-                                <option selected value="3">3</option>
+                                <option value="3">3</option>
                                 <option value="4">4</option>
                                 <option value="5">5</option>
                                 <option value="6">6</option>
