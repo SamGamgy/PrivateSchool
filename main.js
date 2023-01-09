@@ -99,7 +99,7 @@ let cardData = [
       './assets/SOLAR-SYSTEM.JPG',
       './assets/boy-geography.jpg',
       './assets/writing.jpg',
-      './assets/olivia-geography.JPG',
+      './assets/olivia-geo.JPG',
       './assets/girl-counting-two.jpg'
       ],
       imgDescription: [

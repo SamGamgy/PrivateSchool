@@ -105,7 +105,7 @@
       padding:20% 10%;
     } */
     .mySlides img {
-      max-height: 60vh;
+      max-height: 40vh;
       height: auto;
     }
   }
@@ -269,6 +269,7 @@
     }
     .mySlides{
       height:auto;
+      top:20%;
     }
     .floating-btn {
       display: none;
@@ -301,6 +302,9 @@
     }
     .btn {
       font-size: 1.5rem;
+    }
+    .btn-container {
+      bottom:20%;
     }
     .photo-1{
       background-image: none;

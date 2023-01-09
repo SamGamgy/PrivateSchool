@@ -1162,6 +1162,8 @@ iframe {
     margin: 1rem 0;
     font-size: 2rem;
     color: var(--white);
+    z-index: 400;
+    position: relative;
 }
 .modal-header i {
     font-size: 3rem;
