@@ -17,7 +17,7 @@ function openFloat() {
 }
 
 // load shared navigation
-document.addEventListener('DOMContentLoaded', () => {
+function loadNav() {
   fetch('./nav.html')
     .then(res => res.text())
     .then(html => {
@@ -27,7 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
         setActiveNav();
       }
     });
-});
+}
+
+if (document.readyState !== 'loading') {
+  loadNav();
+} else {
+  document.addEventListener('DOMContentLoaded', loadNav);
+}
 
 function setActiveNav() {
   const path = window.location.pathname.split('/').pop();
