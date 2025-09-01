@@ -478,11 +478,11 @@ li.icon{
     margin: 2rem 0;
     gap: 2rem;
 }
-.dots-letter h1{
+.dots-letter .letter{
     font-size: 5rem;
     color: var(--dark-red);
 }
-.dots-letter span{
+.dots-letter .description{
     margin-top: 1rem;
     display: block;
     font-size: 2rem;
