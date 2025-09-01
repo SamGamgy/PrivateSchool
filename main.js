@@ -16,6 +16,38 @@ function openFloat() {
     else{float.classList.remove('open')}
 }
 
+// load shared navigation
+document.addEventListener('DOMContentLoaded', () => {
+  fetch('./nav.html')
+    .then(res => res.text())
+    .then(html => {
+      const holder = document.getElementById('nav');
+      if (holder) {
+        holder.innerHTML = html;
+        setActiveNav();
+      }
+    });
+});
+
+function setActiveNav() {
+  const path = window.location.pathname.split('/').pop();
+  const page = path === '' ? 'index.html' : path;
+  const map = { 'success.html': 'contact.html' };
+  const target = map[page] || page;
+
+  if (target === 'index.html') {
+    const logoLink = document.querySelector('.nav-logo a');
+    if (logoLink) logoLink.classList.add('active');
+  } else {
+    document.querySelectorAll('.menu-items a').forEach(link => {
+      const href = link.getAttribute('href').replace('./', '');
+      if (href === target) {
+        link.parentElement.classList.add('active');
+      }
+    });
+  }
+}
+
 let cardData = [
   {dataOpen:1,
   imgSrc: [
