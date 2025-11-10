@@ -445,6 +445,12 @@ li.icon{
 .feature-4:hover {
     background-color: rgb(240, 132, 141);
 }
+.feature-5 {
+    background-color: rgb(247, 181, 59);
+}
+.feature-5:hover {
+    background-color: rgb(240, 190, 132); 
+}
 .feature-card h5 {
     font-size:1.3rem;
     font-weight: 700;
