@@ -15,3 +15,5 @@ You can see the site here: https://samgamgy.github.io/PrivateSchool/
 Stock photos from Pexels
 
 
+
+Navigation is shared via nav.html partial loaded dynamically on each page.

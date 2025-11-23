@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://montessorilabschool.com/sitemap.xml
