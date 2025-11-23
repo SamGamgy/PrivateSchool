@@ -478,11 +478,18 @@ li.icon{
     margin: 2rem 0;
     gap: 2rem;
 }
-.dots-letter h1{
+.dots-letter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dots-letter .letter{
     font-size: 5rem;
     color: var(--dark-red);
+    font-weight: 700;
+    line-height: 1;
 }
-.dots-letter span{
+.dots-letter .description{
     margin-top: 1rem;
     display: block;
     font-size: 2rem;
@@ -648,6 +655,14 @@ li.icon{
 .hero-photo {
     width:100%;
     height:400px;
+}
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: #623117;
+    margin: 0 0 1rem;
+    padding-top: 2rem;
 }
 .hero-1{
     background-image:  url(./assets/child-eyes.jpg);
