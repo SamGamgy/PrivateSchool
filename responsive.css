@@ -118,7 +118,7 @@
       display: block;
       margin: auto;
       width: 80%;
-      max-height: 360px;
+      max-height: 30vh;
       border-radius: 10px;
       border: 5px solid white;
     }
@@ -156,7 +156,7 @@
     .program .scale-down{font-size: 4rem;}
     .montessori div, .traditional div{ font-size: 1.1rem;}
     .comparison-points{padding: 0; gap: 0.5rem;}
-    #calender iframe{
+    #calender iframe, #annoucement iframe{
       width: 90vw;
       height: calc(90vw * 1.4142);
     }
@@ -295,7 +295,7 @@
     }
     .head-overlay{top:15%;}
     .cards {
-      height: 1515px;
+      height: 1850px; 
     }
     .mission-statements {
       display: block;

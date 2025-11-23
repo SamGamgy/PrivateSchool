@@ -60,17 +60,23 @@ let cardData = [
   './assets/india.jpg',
   './assets/hawaii.jpg',
   './assets/cultural-jewelry.jpg',
-  './assets/girls-cooking.jpg',
   './assets/OKTOBERFEST-JOHANNES.JPG',
   './assets/flags.JPG',
+  './assets/24_25 Photo Adds/INTL.JPG',
+  './assets/24_25 Photo Adds/INTL2.JPG',
+  './assets/24_25 Photo Adds/INTL3.JPG',
+  './assets/24_25 Photo Adds/INTL4.JPG',
   ],
   imgDescription: [
     'Indian Cultural Lesson',
     'Hawaiian Day',
     'Cultural Jewelry on Field Trip',
-    'Cooking cultural cuisine',
     'Celebrating OktoberFest',
     'International Flags taught to the children',
+    '',
+    '',
+    '',
+    '',
   ],
   title:'International Focus',
   color: 'rgb(247 201 17 / 97%)',
@@ -79,19 +85,24 @@ let cardData = [
   {dataOpen:2,
     imgSrc: [
       './assets/bell-plates-german-background.JPG',
-      './assets/hawaii-music.jpg',
-      './assets/tonebars2.JPG',
+      './assets/tonebells.JPG',
       './assets/TONE-BARS-REGULAR.JPG',
-      './assets/ely-violin.jpg'
+      './assets/ely-violin.jpg',
+      './assets/24_25 Photo Adds/PA.jpg',
+      './assets/24_25 Photo Adds/PA2.jpg',
+      './assets/24_25 Photo Adds/PA3.jpg',
+      './assets/24_25 Photo Adds/PA4.jpg',
       
       ],
       imgDescription: [
         'Bell Plates performed for OktoberFest',
-        'Playing Hawaiian Music',
         'Tone Bells used to teach Music Fundamentals',
         'Tone Bars used by Elementary to play songs',
-        'Ely performing Violin'
-        
+        'Ely performing Violin',
+        '',
+        '',
+        '',
+        '',
       ],
       isVideo:true,
       video: [
@@ -111,14 +122,19 @@ let cardData = [
       './assets/trash-clean-up.jpg',
       './assets/friendship.jpg',
       './assets/american-flag.JPG',
-      './assets/senior-performance.jpg'
-      
+      './assets/senior-performance.jpg',
+      './assets/24_25 Photo Adds/Friend.jpg',
+      './assets/24_25 Photo Adds/Friend2.jpg',
+      './assets/24_25 Photo Adds/Friend3.jpg',
       ],
       imgDescription: [
         'Cleaning up Local Trash',
         'Developing friendships',
         'Celebrating the American Flag',
-        'Performing for the Senior Center'
+        'Performing for the Senior Center',
+        '',
+        '',
+        '',
       ],
       isVideo:true,
       video: [

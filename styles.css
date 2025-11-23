@@ -445,6 +445,12 @@ li.icon{
 .feature-4:hover {
     background-color: rgb(240, 132, 141);
 }
+.feature-5 {
+    background-color: rgb(247, 181, 59);
+}
+.feature-5:hover {
+    background-color: rgb(240, 190, 132); 
+}
 .feature-card h5 {
     font-size:1.3rem;
     font-weight: 700;
@@ -540,7 +546,7 @@ li.icon{
 
 }
 /* what-is-montessori */
-#what-is-montessori, #calender, #reading {
+#what-is-montessori, #calender, #reading, #announcement {
     padding-top:4rem;
 }
 #what-is-montessori h3{
@@ -567,6 +573,16 @@ li.icon{
     display: block;
     width:50vw;
     height:calc(50vw * 1.4142);
+    border-radius: 10px;
+}
+#announcement iframe{
+    margin-top: 3rem;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width:50vw;
+    height:calc(50vw * 1.0142);
     border-radius: 10px;
 }
 .comparison-points {
@@ -1096,7 +1112,7 @@ input:focus, textarea:focus {
     width: 200px;
     border-radius: 5px;
 }
-#reading h3, #calender h3{
+#reading h3, #calender h3, #announcement h3{
     font-size: 2rem;
     text-align: center;
     margin: 4rem 0 0;
@@ -1301,4 +1317,14 @@ address a:hover{
 }
 footer div h5 {
     margin-bottom:0.5rem;
+}
+
+/* Announcement Sections */
+
+/* .section-sub-header {
+margin-top: 2rem;
+} */
+
+.sub-info {
+text-align: center;
 }

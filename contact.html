@@ -58,6 +58,47 @@
     <body>
         <header id="nav"></header>
         <h1 class="sub-header">Contact Montessori Lab School</h1>
+        <header>
+            <nav>
+                <ul class="nav-bar" id="topNav">
+                    <img class='logo' src="./assets/fav-icon/apple-touch-icon.png" alt=""> 
+                    <li class="nav-logo ">
+                        <a class='hover-underline-animation' href="./index.html">
+                            <span class="long"> Montessori Lab School </span>
+                            <span class="short"> MLS </span>
+                        </a> 
+                        <span class="sub-text">since 1977</span>
+                    </li>
+                    <li class="phone-nav"><a href="tel:7575488762">(757) 548-8762</a> </li>
+                    <div class="menu">
+                        <li class="home-sub menu-items hover-underline-animation"><a href="./index.html">Home</a></li>
+                        <li class="menu-items hover-underline-animation"><a href="./programs.html">Curriculum</a>
+                            <ul class="sub-nav-items">
+                                <li><a href="./programs.html#pre-school">Primary Programs</a></li>
+                                <li><a href="./programs.html#elementary">Elementary Program</a></li>
+                                <li><a href="./programs.html#admission">Admissions Process</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-items hover-underline-animation"><a href="./parents.html">Parents</a>
+                            <ul class="sub-nav-items">
+                                <li><a href="./parents.html#announcement">Announcements</a></li>
+                                <li><a href="./parents.html#what-is-montessori">What is Montessori?</a></li>
+                                <li><a href="./parents.html#calender">School Calendar</a></li>
+                                <li><a href="./parents.html#reading">Recommended Reading</a></li>
+                            </ul>
+                            </li>
+                        <li class="active menu-items hover-underline-animation"><a href="./contact.html">Contact</a></li>
+                    </div>
+                    <li class="icon"> 
+                        <a href="javascript:void(0);" class="icon" onclick="navBarMobile()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>    
+        
+        
         <section class="contact-section">
             <div class="contact-overlay">
             </div>
@@ -66,8 +107,6 @@
                 <h3>Send us your information</h3>
                 <form action="https://formsubmit.co/mls@montessorilabschool.com" method="POST">
                     <input type="text" name="_honey" style="display:none">
-
-                    <input type="hidden" name="_captcha" value="false">
 
                     <input type="hidden" name="_next" value="https://montessorilabschool.com/success.html">
 
@@ -87,9 +126,9 @@
                         <label for="program">Preferred Program</label> <br/>
                         <select name="program" id="program">
                             <option style='display: none;' disabled selected value=""></option>
-                            <option value="pre-k-limited">Pre-School Limited Week</option>
-                            <option value="pre-k-half">Pre-School Half Day</option>
-                            <option value="pre-k-full">Pre-School Full Day</option>
+                            <option value="pre-k-limited">Primary Limited Week</option>
+                            <option value="pre-k-half">Primary Half Day</option>
+                            <option value="pre-k-full">Primary Full Day</option>
                             <option value="elementary">Elementary Full Day</option>
                         </select>
                     </div>
@@ -102,7 +141,6 @@
                             <label for="child-age">Child's Age *</label><br/>
                             <select id='child-age' required name='child-age'>
                                 <option style='display: none;' disabled selected value=""></option>
-                                <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                                 <option value="5">5</option>
@@ -112,6 +150,7 @@
                                 <option value="9">9</option>
                                 <option value="10">10</option>
                                 <option value="11">11</option>
+                                <option value="12">12</option>
                             </select>
                         </div>
                     </div>
@@ -145,7 +184,7 @@
             <div class="footer-hours">
                 <h5>Hours of Operation</h5>
                 <div>Monday-Friday</div>
-                <div>September-June : 8:30 a.m. - 4:00 p.m.</div>
+                <div>September-June : 9:00 a.m. - 3:00 p.m.</div>
             </div>
         </footer>
         <script src="./main.js" defer></script>
