@@ -62,6 +62,9 @@ h1, h2, h3, h4, h5{
 button {
     font-family: 'Montserrat', sans-serif; ;
 }
+.hide {
+    display: none;
+}
 
 .container { 
     margin-left:auto;
@@ -695,12 +698,33 @@ li.icon{
     background-position: center;
     background-size: cover;
 }
+.hero-4{
+    background:  url(./assets/writing.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.hero-tutoring-bg{
+    background: radial-gradient(120% 120% at 20% 20%, #fffd84 0%, #f7c911 30%, #2c4b92 70%, #132651 100%);
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+.hero-tutoring-bg::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0) 45%, rgba(255,255,255,0.28) 90%);
+    pointer-events: none;
+}
 .hero-photo .photo-overlay{
     width: 100%;
     background-color: #ffffffb3;
     position: absolute;
     top: 0;
     bottom: 0;
+}
+.tutoring-overlay{
+    background: linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.9) 100%);
 }
 .quote-wrap {
     position: absolute;
@@ -911,6 +935,34 @@ li.icon{
     padding: 1rem;
     border-radius: 18px;
     width: 325px;
+}
+.hero-quote-author{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--dark-blue);
+}
+.tutoring-content .program-title{
+    font-size: 3rem;
+    text-align: center;
+    color: var(--dark-blue);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.tutoring-content .program-descript{
+    width: 100%;
+    max-width: 1100px;
+    margin-top: 1rem;
+}
+.tutoring-pillars .bullet{
+    width: 100%;
+    max-width: 1100px;
+    text-align: left;
+    line-height: 1.6;
+    background: #f5f6fb;
+    border: 1px solid #d9deed;
+}
+.tutoring-summary .program-descript{
+    margin-bottom: 0;
 }
 .program-imgs {
     display: flex;
